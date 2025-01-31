@@ -1,28 +1,28 @@
 #!/bin/bash
 mkdir -p assets/swatches
 
-# Dark Main (Shönö)
+# Dark main (shono)
 dark_main=(
-  "#0d1615:Shönö_Base" "#1a2328:Shönö_Surface" "#2a363c:Shönö_Overlay"
-  "#7c9b8e:Shönö_Muted" "#a3aeb5:Shönö_Subtle" "#d8e1e5:Shönö_Text"
-  "#c7958d:Shönö_Pink" "#9d4a40:Shönö_Red" "#b0a87a:Shönö_Yellow" "#4a7d6a:Shönö_Green" "#5a9b9e:Shönö_Teal" "#6d8dad:Shönö_Blue"
-  "#1a2328:Shönö_Low" "#2a363c:Shönö_Mid" "#4a555c:Shönö_High"
+  "#0d1615:shono_base" "#1a2328:shono_surface" "#2a363c:shono_overlay"
+  "#7c9b8e:shono_muted" "#a3aeb5:shono_subtle" "#d8e1e5:shono_text"
+  "#c7958d:shono_pink" "#9d4a40:shono_red" "#b0a87a:shono_yellow" "#4a7d6a:shono_green" "#5a9b9e:shono_teal" "#6d8dad:shono_blue"
+  "#1a2328:shono_low" "#2a363c:shono_mid" "#4a555c:shono_high"
 )
 
-# Dark Bright (Üdesh)
+# Dark bright (udesh)
 dark_bright=(
-  "#1a2328:Üdesh_Base" "#2a363c:Üdesh_Surface" "#4a555c:Üdesh_Overlay" 
-  "#8caa9e:Üdesh_Muted" "#c8c194:Üdesh_Subtle" "#e0e7eb:Üdesh_Text"
-  "#e0aeaa:Üdesh_Pink" "#c76a5d:Üdesh_Red" "#d8d0a0:Üdesh_Yellow" "#689f8e:Üdesh_Green" "#7dbfc5:Üdesh_Teal" "#8fb3d9:Üdesh_Blue"
-  "#2a363c:Üdesh_Low" "#4a555c:Üdesh_Mid" "#6d8dad:Üdesh_High"
+  "#1a2328:udesh_base" "#2a363c:udesh_surface" "#4a555c:udesh_overlay" 
+  "#8caa9e:udesh_muted" "#c8c194:udesh_subtle" "#e0e7eb:udesh_text"
+  "#e0aeaa:udesh_pink" "#c76a5d:udesh_red" "#d8d0a0:udesh_yellow" "#689f8e:udesh_green" "#7dbfc5:udesh_teal" "#8fb3d9:udesh_blue"
+  "#2a363c:udesh_low" "#4a555c:udesh_mid" "#6d8dad:udesh_high"
 )
 
-# Light (Öglöö)
+# light (ogloo)
 light=(
-  "#f0f5eb:Öglöö_Base" "#e0e7eb:Öglöö_Surface" "#d8e1e5:Öglöö_Overlay"
-  "#a3aeb5:Öglöö_Muted" "#7c9b8e:Öglöö_Subtle" "#4a555c:Öglöö_Text"
-  "#d9a8ad:Öglöö_Pink" "#b56359:Öglöö_Red" "#c8c194:Öglöö_Yellow" "#7c9b8e:Öglöö_Green" "#5a9b9e:Öglöö_Teal" "#6d8dad:Öglöö_Blue"
-  "#e0e7eb:Öglöö_Low" "#d8e1e5:Öglöö_Mid" "#a3aeb5:Öglöö_High"
+  "#f0f5eb:ogloo_base" "#e0e7eb:ogloo_surface" "#d8e1e5:ogloo_overlay"
+  "#a3aeb5:ogloo_muted" "#7c9b8e:ogloo_subtle" "#4a555c:ogloo_text"
+  "#d9a8ad:ogloo_pink" "#b56359:ogloo_red" "#c8c194:ogloo_yellow" "#7c9b8e:ogloo_green" "#5a9b9e:ogloo_teal" "#6d8dad:ogloo_blue"
+  "#e0e7eb:ogloo_low" "#d8e1e5:ogloo_mid" "#a3aeb5:ogloo_high"
 )
 
 generate_swatches() {
@@ -33,7 +33,7 @@ generate_swatches() {
     magick -size 23x23 xc:none \
       -fill "$hex" -stroke "#2a363c" -strokewidth 1 \
       -draw "roundrectangle 0,0 22,22 4,4" \
-      "assets/swatches/${name}.png"
+      "assets/palettes/swatches/${name}.png"
   done
 }
 
