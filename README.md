@@ -120,7 +120,7 @@ cp -r terminals/kitty/ ~/.config/kitty/themes/
 ```
 Then, update your `kitty.conf`:
 ```conf
-include ./themes/shono.conf
+include ./themes/sarnai-shono.conf
 ```
 
 #### Alacritty
@@ -132,7 +132,7 @@ Then, update your `alacritty.toml`:
 ```toml
 [general]
 import = [
-    "~/.config/alacritty/themes/shono.toml"
+    "~/.config/alacritty/themes/sarnai-shono.toml"
 ]
 ```
 
