@@ -19,9 +19,9 @@ Comming soon...
 
 ## 🎨 Palette
 <p align="center">
-  <img src="assets/palettes/palette.png" style="max-width: 33%">
-  <img src="assets/palettes/palette-bright.png" style="max-width: 33%">
-  <img src="assets/palettes/palette-light.png" style="max-width: 33%">
+  <img src="assets/palettes/palette.png" style="width: 33%">
+  <img src="assets/palettes/palette-bright.png" style="width: 33%">
+  <img src="assets/palettes/palette-light.png" style="width: 33%">
 </p>
 
 <details>
