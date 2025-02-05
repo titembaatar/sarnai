@@ -1,26 +1,13 @@
-# Үдэш (Evening)
 [colors]
-primary.background = "#1a2328"
-primary.foreground  = "#e0e7eb"
-cursor.text = "#1a2328"
-cursor.cursor = "#e0e7eb"
+primary.background = "#1C332D"
+primary.foreground = "#D5E6E0"
+cursor.text = "#1C332D"
+cursor.cursor = "#D5E6E0"
 
 [colors.normal]
-black = "#1a2328"
-red = "#c76a5d"
-green = "#689f8e"
-yellow = "#d8d0a0"
-blue = "#8fb3d9"
-magenta = "#e0aeaa"
-cyan = "#7dbfc5"
-white = "#e0e7eb"
+black = "#1C332D"   red = "#E47E6E"    green = "#5EAA7C"  yellow = "#E5C788"
+blue = "#B5E3E6"    magenta = "#E6B2BC" cyan = "#4FA8A7"   white = "#D5E6E0"
 
 [colors.bright]
-black = "#2a363c"
-red = "#d9a8ad"
-green = "#9dbfab"
-yellow = "#e5e0a3"
-blue = "#a6c5e5"
-magenta = "#f0c8d0"
-cyan = "#9ad4d3"
-white = "#4a555c"
+black = "#1f3832"   red = "#fb8b79"    green = "#67bb88"  yellow = "#fcdb96"
+blue = "#c7fafd"    magenta = "#fdc4cf" cyan = "#57b9b8"   white = "#eafdf6"

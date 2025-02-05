@@ -1,4 +1,3 @@
-
 <h3 align="center">sarnai</h3>
 <h6 align="center">ᠰᠠᠷᠠᠨᠠᠢ</h6>
 <br/>
@@ -13,102 +12,340 @@ She's the one who made the logo, helped find colors name, refined the palette to
 ## 🇲🇳 Philosophy  
 - **Readability First**: Good contrast for clarity, but soft enough for long sessions.  
 - **Minimalist Spirit**: Sticking with terminal 16 colors and some variants for bgs and fgs.  
-- **green Tints**: Because I love green, and I'm tired of blues.
+- **Green Tints**: Because I love green, and I'm tired of blues.
 
-## 📷 Preview  
+---
 
-### Neovim
+## Gallery  
+Comming soon...
 
-![Neovim Preview](assets/sarnai-nvim.png)  
-
-### Terminal
-
-![Terminal Preview](assets/sarnai-terminal.png)  
+---
 
 ## 🎨 Palette  
 <p align="center">
-  <img width="100px" src="assets/palettes/palette.png">
-  <img width="100px" src="assets/palettes/palette-bright.png">
-  <img width="100px" src="assets/palettes/palette-light.png">
+  <img src="assets/palettes/palette.png">
+  <img src="assets/palettes/palette-bright.png">
+  <img src="assets/palettes/palette-light.png">
 </p>
 
 <details>
 <summary>🌑 Шөнө (Shono) - Night</summary>
 <table>
-  <tr><td><img src="assets/palettes/swatches/shono_base.png" width="23" style="border-radius:4px"></td><td>Хөвсгөл (Khövsgöl)</td><td><code>#0d1615</code></td><td>Deep forest floor</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_surface.png" width="23" style="border-radius:4px"></td><td>Хар Зурхны (Khar Zurkhnii)</td><td><code>#1a2328</code></td><td>Twilight rock formations</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_overlay.png" width="23" style="border-radius:4px"></td><td>Хайрхан (Khairkhan)</td><td><code>#2a363c</code></td><td>Mountain shadow</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_muted.png" width="23" style="border-radius:4px"></td><td>Бурхан (Burkhan)</td><td><code>#7c9b8e</code></td><td>Lichens on stone</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_subtle.png" width="23" style="border-radius:4px"></td><td>Инжен Буга (Ingen Buga)</td><td><code>#a3aeb5</code></td><td>Morning fog</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_text.png" width="23" style="border-radius:4px"></td><td>Цагаан (Tsagaan)</td><td><code>#d8e1e5</code></td><td>Moonlit snow</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_pink.png" width="23" style="border-radius:4px"></td><td>Сарнай (Sarnai)</td><td><code>#c7958d</code></td><td>Wild mountain rose</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_red.png" width="23" style="border-radius:4px"></td><td>Алтан (Altan)</td><td><code>#9d4a40</code></td><td>Nomadic hearth</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_yellow.png" width="23" style="border-radius:4px"></td><td>Говийн Элс (Goviin Els)</td><td><code>#b0a87a</code></td><td>Desert sands</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_green.png" width="23" style="border-radius:4px"></td><td>Хэнтий (Khentii)</td><td><code>#4a7d6a</code></td><td>Sacred forests</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_teal.png" width="23" style="border-radius:4px"></td><td>Дэлгэр (Derger)</td><td><code>#5a9b9e</code></td><td>Glacial waters</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_blue.png" width="23" style="border-radius:4px"></td><td>Тэнгэр (Tenger)</td><td><code>#6d8dad</code></td><td>Night sky</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_low.png" width="23" style="border-radius:4px"></td><td>Чоно (Chono)</td><td><code>#1a2328</code></td><td>Wolf's shadow</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_mid.png" width="23" style="border-radius:4px"></td><td>Төмөр (Tömör)</td><td><code>#2a363c</code></td><td>Iron ore veins</td></tr>
-  <tr><td><img src="assets/palettes/swatches/shono_high.png" width="23" style="border-radius:4px"></td><td>Цас (Tsas)</td><td><code>#4a555c</code></td><td>Moonlit ice</td></tr>
+  <tr>
+    <td><img src="assets/swatches/shono_base.png" width="23" style="border-radius:4px"></td>
+    <td><code>#0E1A16</code></td>
+    <td><code>rgb(14, 26, 22)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_surface.png" width="23" style="border-radius:4px"></td>
+    <td><code>#162320</code></td>
+    <td><code>rgb(22, 35, 32)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_overlay.png" width="23" style="border-radius:4px"></td>
+    <td><code>#1F3230</code></td>
+    <td><code>rgb(31, 50, 48)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_muted.png" width="23" style="border-radius:4px"></td>
+    <td><code>#5C7670</code></td>
+    <td><code>rgb(92, 118, 112)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_text.png" width="23" style="border-radius:4px"></td>
+    <td><code>#C5D6D0</code></td>
+    <td><code>rgb(197, 214, 208)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_low.png" width="23" style="border-radius:4px"></td>
+    <td><code>#1A4A3E</code></td>
+    <td><code>rgb(26, 74, 62)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_mid.png" width="23" style="border-radius:4px"></td>
+    <td><code>#2C6D56</code></td>
+    <td><code>rgb(44, 109, 86)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_high.png" width="23" style="border-radius:4px"></td>
+    <td><code>#429A78</code></td>
+    <td><code>rgb(66, 154, 120)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_sarnai.png" width="23" style="border-radius:4px"></td>
+    <td><code>#D6A2AC</code></td>
+    <td><code>rgb(214, 162, 172)</code></td>
+    <td>Сарнай (Rose)</td>
+    <td>Mountain wild flower</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_anis.png" width="23" style="border-radius:4px"></td>
+    <td><code>#C4675D</code></td>
+    <td><code>rgb(196, 103, 93)</code></td>
+    <td>Аньс (Lingonberry)</td>
+    <td>Mongolian berry</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_els.png" width="23" style="border-radius:4px"></td>
+    <td><code>#D5B677</code></td>
+    <td><code>rgb(213, 182, 119)</code></td>
+    <td>Элс (Sand)</td>
+    <td>Gobi desert</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_nuur.png" width="23" style="border-radius:4px"></td>
+    <td><code>#3f8895</code></td>
+    <td><code>rgb(63, 136, 149)</code></td>
+    <td>Нуур (Lake)</td>
+    <td>Lake Hovsgol</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_mus.png" width="23" style="border-radius:4px"></td>
+    <td><code>#A5D3D6</code></td>
+    <td><code>rgb(165, 211, 214)</code></td>
+    <td>Мөс (Ice)</td>
+    <td>Winter's snow on frozen lake</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/shono_uvs.png" width="23" style="border-radius:4px"></td>
+    <td><code>#4E9A6C</code></td>
+    <td><code>rgb(78, 154, 108)</code></td>
+    <td>Өвс (Grass)</td>
+    <td>Green Mongolian steppes</td>
+  </tr>
 </table>
 </details>
 
 <details>
 <summary>🌆 Үдэш (Udesh) - Evening</summary>
 <table>
-  <tr><td><img src="assets/palettes/swatches/udesh_base.png" width="23" style="border-radius:4px"></td><td>Үдшийн Хөвсгөл (Udeshiin Khövsgöl)</td><td><code>#1a2328</code></td><td>Twilight lake reflections</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_surface.png" width="23" style="border-radius:4px"></td><td>Үдшийн Чоно (Udeshiin Chono)</td><td><code>#2a363c</code></td><td>Evening wolf's fur</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_overlay.png" width="23" style="border-radius:4px"></td><td>Үдшийн Төмөр (Udeshiin Tömör)</td><td><code>#4a555c</code></td><td>Dusk-lit iron cliffs</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_muted.png" width="23" style="border-radius:4px"></td><td>Үдшийн Бурхан (Udeshiin Burkhan)</td><td><code>#8caa9e</code></td><td>Evening moss</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_subtle.png" width="23" style="border-radius:4px"></td><td>Үдшийн Инжен (Udeshiin Ingen)</td><td><code>#c8c194</code></td><td>Golden hour mist</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_text.png" width="23" style="border-radius:4px"></td><td>Үдшийн Цагаан (Udeshiin Tsagaan)</td><td><code>#e0e7eb</code></td><td>Last light on snow</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_pink.png" width="23" style="border-radius:4px"></td><td>Үдшийн Сарнай (Udeshiin Sarnai)</td><td><code>#e0aeaa</code></td><td>Sunset on wild roses</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_red.png" width="23" style="border-radius:4px"></td><td>Үдшийн Алтан (Udeshiin Altan)</td><td><code>#c76a5d</code></td><td>Glowing embers</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_yellow.png" width="23" style="border-radius:4px"></td><td>Үдшийн Шар (Udeshiin Shar)</td><td><code>#d8d0a0</code></td><td>Golden steppe grasses</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_green.png" width="23" style="border-radius:4px"></td><td>Үдшийн Хэнтий (Udeshiin Khentii)</td><td><code>#689f8e</code></td><td>Forest at dusk</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_teal.png" width="23" style="border-radius:4px"></td><td>Үдшийн Дэлгэр (Udeshiin Derger)</td><td><code>#7dbfc5</code></td><td>Twilight streams</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_blue.png" width="23" style="border-radius:4px"></td><td>Үдшийн Тэнгэр (Udeshiin Tenger)</td><td><code>#8fb3d9</code></td><td>Deepening evening sky</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_low.png" width="23" style="border-radius:4px"></td><td>Үдшийн Хар (Udeshiin Khar)</td><td><code>#2a363c</code></td><td>Valley shadows</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_mid.png" width="23" style="border-radius:4px"></td><td>Үдшийн Цэнхэр (Udeshiin Tsenkher)</td><td><code>#4a555c</code></td><td>Mountain silhouettes</td></tr>
-  <tr><td><img src="assets/palettes/swatches/udesh_high.png" width="23" style="border-radius:4px"></td><td>Үдшийн Цас (Udeshiin Tsas)</td><td><code>#6d8dad</code></td><td>Moonrise glow</td></tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_base.png" width="23" style="border-radius:4px"></td>
+    <td><code>#1C332D</code></td>
+    <td><code>rgb(28, 51, 45)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_surface.png" width="23" style="border-radius:4px"></td>
+    <td><code>#243E38</code></td>
+    <td><code>rgb(36, 62, 56)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_overlay.png" width="23" style="border-radius:4px"></td>
+    <td><code>#2D4B45</code></td>
+    <td><code>rgb(45, 75, 69)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_muted.png" width="23" style="border-radius:4px"></td>
+    <td><code>#6C8A82</code></td>
+    <td><code>rgb(108, 138, 130)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_text.png" width="23" style="border-radius:4px"></td>
+    <td><code>#D5E6E0</code></td>
+    <td><code>rgb(213, 230, 224)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_low.png" width="23" style="border-radius:4px"></td>
+    <td><code>#2A5D4F</code></td>
+    <td><code>rgb(42, 93, 79)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_mid.png" width="23" style="border-radius:4px"></td>
+    <td><code>#3C8A70</code></td>
+    <td><code>rgb(60, 138, 112)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_high.png" width="23" style="border-radius:4px"></td>
+    <td><code>#52B38F</code></td>
+    <td><code>rgb(82, 179, 143)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_sarnai.png" width="23" style="border-radius:4px"></td>
+    <td><code>#E6B2BC</code></td>
+    <td><code>rgb(230, 178, 188)</code></td>
+    <td>Сарнай (Rose)</td>
+    <td>Mountain wild flower</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_anis.png" width="23" style="border-radius:4px"></td>
+    <td><code>#E47E6E</code></td>
+    <td><code>rgb(228, 126, 110)</code></td>
+    <td>Аньс (Lingonberry)</td>
+    <td>Mongolian berry</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_els.png" width="23" style="border-radius:4px"></td>
+    <td><code>#E5C788</code></td>
+    <td><code>rgb(229, 199, 136)</code></td>
+    <td>Элс (Sand)</td>
+    <td>Gobi desert</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_nuur.png" width="23" style="border-radius:4px"></td>
+    <td><code>#4FA8A7</code></td>
+    <td><code>rgb(79, 168, 167)</code></td>
+    <td>Нуур (Lake)</td>
+    <td>Lake Hovsgol</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_mus.png" width="23" style="border-radius:4px"></td>
+    <td><code>#B5E3E6</code></td>
+    <td><code>rgb(181, 227, 230)</code></td>
+    <td>Мөс (Ice)</td>
+    <td>Winter's snow on frozen lake</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/udesh_uvs.png" width="23" style="border-radius:4px"></td>
+    <td><code>#5EAA7C</code></td>
+    <td><code>rgb(94, 170, 124)</code></td>
+    <td>Өвс (Grass)</td>
+    <td>Green Mongolian steppes</td>
+  </tr>
 </table>
 </details>
 
 <details>
 <summary>🌄 Өглөө (Ogloo) - Morning</summary>
 <table>
-  <tr><td><img src="assets/palettes/swatches/ogloo_base.png" width="23" style="border-radius:4px"></td><td>Өглөөний Нүүдэл (Ogloonii Nüüdel)</td><td><code>#f0f5eb</code></td><td>Morning mist over grass</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_surface.png" width="23" style="border-radius:4px"></td><td>Өглөөний Цагаан (Ogloonii Tsagaan)</td><td><code>#e0e7eb</code></td><td>Dew-covered plains</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_overlay.png" width="23" style="border-radius:4px"></td><td>Өглөөний Инжен (Ogloonii Ingen)</td><td><code>#d8e1e5</code></td><td>Morning fog in valleys</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_muted.png" width="23" style="border-radius:4px"></td><td>Өглөөний Бурхан (Ogloonii Burkhan)</td><td><code>#a3aeb5</code></td><td>Shaded stones</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_subtle.png" width="23" style="border-radius:4px"></td><td>Өглөөний Хэнтий (Ogloonii Khentii)</td><td><code>#7c9b8e</code></td><td>Forest at dawn</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_text.png" width="23" style="border-radius:4px"></td><td>Өглөөний Хар (Ogloonii Khar)</td><td><code>#4a555c</code></td><td>Morning shadows</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_pink.png" width="23" style="border-radius:4px"></td><td>Өглөөний Сарнай (Ogloonii Sarnai)</td><td><code>#d9a8ad</code></td><td>Blossoms at sunrise</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_red.png" width="23" style="border-radius:4px"></td><td>Өглөөний Алтан (Ogloonii Altan)</td><td><code>#b56359</code></td><td>Sunlit cliffs</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_yellow.png" width="23" style="border-radius:4px"></td><td>Өглөөний Шар (Ogloonii Shar)</td><td><code>#c8c194</code></td><td>Golden morning light</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_green.png" width="23" style="border-radius:4px"></td><td>Өглөөний Хэнтий (Ogloonii Khentii)</td><td><code>#7c9b8e</code></td><td>Dewy meadows</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_teal.png" width="23" style="border-radius:4px"></td><td>Өглөөний Дэлгэр (Ogloonii Derger)</td><td><code>#5a9b9e</code></td><td>Morning lake ripples</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_blue.png" width="23" style="border-radius:4px"></td><td>Өглөөний Тэнгэр (Ogloonii Tenger)</td><td><code>#6d8dad</code></td><td>Clear morning sky</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_low.png" width="23" style="border-radius:4px"></td><td>Өглөөний Цэнхэр (Ogloonii Tsenkher)</td><td><code>#e0e7eb</code></td><td>Soft morning glow</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_mid.png" width="23" style="border-radius:4px"></td><td>Өглөөний Цагаан (Ogloonii Tsagaan)</td><td><code>#d8e1e5</code></td><td>Morning mist</td></tr>
-  <tr><td><img src="assets/palettes/swatches/ogloo_high.png" width="23" style="border-radius:4px"></td><td>Өглөөний Цас (Ogloonii Tsas)</td><td><code>#a3aeb5</code></td><td>Frost at dawn</td></tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_base.png" width="23" style="border-radius:4px"></td>
+    <td><code>#F2F7F5</code></td>
+    <td><code>rgb(242, 247, 245)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_surface.png" width="23" style="border-radius:4px"></td>
+    <td><code>#E6EEE9</code></td>
+    <td><code>rgb(230, 238, 233)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_overlay.png" width="23" style="border-radius:4px"></td>
+    <td><code>#DAE5DE</code></td>
+    <td><code>rgb(218, 229, 222)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_muted.png" width="23" style="border-radius:4px"></td>
+    <td><code>#8CA9A1</code></td>
+    <td><code>rgb(140, 169, 161)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_text.png" width="23" style="border-radius:4px"></td>
+    <td><code>#1C332D</code></td>
+    <td><code>rgb(28, 51, 45)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_low.png" width="23" style="border-radius:4px"></td>
+    <td><code>#D1E3DB</code></td>
+    <td><code>rgb(209, 227, 219)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_mid.png" width="23" style="border-radius:4px"></td>
+    <td><code>#A3C7B5</code></td>
+    <td><code>rgb(163, 199, 181)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_high.png" width="23" style="border-radius:4px"></td>
+    <td><code>#72A591</code></td>
+    <td><code>rgb(114, 165, 145)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_sarnai.png" width="23" style="border-radius:4px"></td>
+    <td><code>#B57E8C</code></td>
+    <td><code>rgb(181, 126, 140)</code></td>
+    <td>Сарнай (Rose)</td>
+    <td>Mountain wild flower</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_anis.png" width="23" style="border-radius:4px"></td>
+    <td><code>#C4675D</code></td>
+    <td><code>rgb(196, 103, 93)</code></td>
+    <td>Аньс (Lingonberry)</td>
+    <td>Mongolian berry</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_els.png" width="23" style="border-radius:4px"></td>
+    <td><code>#D5B677</code></td>
+    <td><code>rgb(213, 182, 119)</code></td>
+    <td>Элс (Sand)</td>
+    <td>Gobi desert</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_nuur.png" width="23" style="border-radius:4px"></td>
+    <td><code>#3f8895</code></td>
+    <td><code>rgb(63, 136, 149)</code></td>
+    <td>Нуур (Lake)</td>
+    <td>Lake Hovsgol</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_mus.png" width="23" style="border-radius:4px"></td>
+    <td><code>#5B9A9D</code></td>
+    <td><code>rgb(91, 154, 157)</code></td>
+    <td>Мөс (Ice)</td>
+    <td>Winter's snow on frozen lake</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ogloo_uvs.png" width="23" style="border-radius:4px"></td>
+    <td><code>#4E9A6C</code></td>
+    <td><code>rgb(78, 154, 108)</code></td>
+    <td>Өвс (Grass)</td>
+    <td>Green Mongolian steppes</td>
+  </tr>
 </table>
 </details>
+
+---
 
 ## 📦 Quick Start  
 
 ### Neovim
-
-Install via your favourite plugin manager (e.g., lazy.nvim )
-
-```lua
-{  
-  "yourusername/sarnai.nvim",  
-  config = function()  
-    vim.cmd.colorscheme("sarnai")  
-  end  
-}
-```
+Looking for the Neovim colorscheme? It's now available separately at: [sarnai.nvim](https://github.com/titembaatar/sarnai.nvim)
 
 ### Terminals  
 
@@ -144,6 +381,8 @@ Then, update your `config`:
 ```
 theme = sarnai-shono
 ```
+
+---
 
 ## 🫱🏼‍🫲🏽 Contributing  
 

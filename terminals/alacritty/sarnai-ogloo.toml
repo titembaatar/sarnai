@@ -1,26 +1,13 @@
-# Өглөө (Morning)
 [colors]
-primary.background = "#f0f5eb"
-primary.foreground  = "#4a555c"
-cursor.text = "#f0f5eb"
-cursor.cursor = "#4a555c"
+primary.background = "#F2F7F5"
+primary.foreground = "#1C332D"
+cursor.text = "#F2F7F5"
+cursor.cursor = "#1C332D"
 
 [colors.normal]
-black = "#f0f5eb"
-red = "#b56359"
-green = "#7c9b8e"
-yellow = "#c8c194"
-blue = "#6d8dad"
-magenta = "#d9a8ad"
-cyan = "#5a9b9e"
-white = "#4a555c"
+black = "#F2F7F5"   red = "#C4675D"    green = "#4E9A6C"  yellow = "#D5B677"
+blue = "#5B9A9D"    magenta = "#B57E8C" cyan = "#3f8895"   white = "#1C332D"
 
 [colors.bright]
-black = "#e0e7eb"
-red = "#c76a5d"
-green = "#9dbfab"
-yellow = "#e5e0a3"
-blue = "#8fb3d9"
-magenta = "#e0aeaa"
-cyan = "#7dbfc5"
-white = "#a3aeb5"
+black = "#dadedd"   red = "#b05d54"    green = "#468b61"  yellow = "#c0a46b"
+blue = "#528b8d"    magenta = "#a3717e" cyan = "#397a86"   white = "#192e29"
