@@ -82,9 +82,9 @@ local function update_readme()
 
 	-- Generate palette sections
 	local palettes = {
-		{ key = "shono", mn = "🌑 Шөнө", en = "Night" },
-		{ key = "udesh", mn = "🌆 Үдэш", en = "Evening" },
-		{ key = "ogloo", mn = "🌄 Өглөө", en = "Morning" }
+		{ key = "shono", mn = "🌌 Шөнө", en = "Night" },
+		{ key = "udesh", mn = "🌄 Үдэш", en = "Evening" },
+		{ key = "ogloo", mn = "🌅 Өглөө", en = "Morning" }
 	}
 	local sections = {}
 

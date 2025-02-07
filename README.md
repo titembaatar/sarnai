@@ -25,117 +25,117 @@ Comming soon...
 </p>
 
 <details>
-<summary>🌑 Шөнө (Shono) - Night</summary>
+<summary>🌌 Шөнө (Shono) - Night</summary>
 <table>
   <tr>
     <td><img src="assets/swatches/shono_base.png" width="23" style="border-radius:4px"></td>
     <td>base</td>
-    <td><code>#0E1A16</code></td>
-    <td><code>rgb(14, 26, 22)</code></td>
+    <td><code>#0a1a0f</code></td>
+    <td><code>rgb(10, 26, 15)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_surface.png" width="23" style="border-radius:4px"></td>
     <td>surface</td>
-    <td><code>#162320</code></td>
-    <td><code>rgb(22, 35, 32)</code></td>
+    <td><code>#132a1a</code></td>
+    <td><code>rgb(19, 42, 26)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_overlay.png" width="23" style="border-radius:4px"></td>
     <td>overlay</td>
-    <td><code>#1F3230</code></td>
-    <td><code>rgb(31, 50, 48)</code></td>
+    <td><code>#1d3a26</code></td>
+    <td><code>rgb(29, 58, 38)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_muted.png" width="23" style="border-radius:4px"></td>
     <td>muted</td>
-    <td><code>#5C7670</code></td>
-    <td><code>rgb(92, 118, 112)</code></td>
+    <td><code>#5a7261</code></td>
+    <td><code>rgb(90, 114, 97)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_text.png" width="23" style="border-radius:4px"></td>
     <td>text</td>
-    <td><code>#C5D6D0</code></td>
-    <td><code>rgb(197, 214, 208)</code></td>
+    <td><code>#e2e9e4</code></td>
+    <td><code>rgb(226, 233, 228)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_low.png" width="23" style="border-radius:4px"></td>
     <td>low</td>
-    <td><code>#1A4A3E</code></td>
-    <td><code>rgb(26, 74, 62)</code></td>
+    <td><code>#206036</code></td>
+    <td><code>rgb(32, 96, 54)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_mid.png" width="23" style="border-radius:4px"></td>
     <td>mid</td>
-    <td><code>#2C6D56</code></td>
-    <td><code>rgb(44, 109, 86)</code></td>
+    <td><code>#2d864a</code></td>
+    <td><code>rgb(45, 134, 74)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_high.png" width="23" style="border-radius:4px"></td>
     <td>high</td>
-    <td><code>#429A78</code></td>
-    <td><code>rgb(66, 154, 120)</code></td>
+    <td><code>#3aac5f</code></td>
+    <td><code>rgb(58, 172, 95)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_sarnai.png" width="23" style="border-radius:4px"></td>
     <td>sarnai</td>
-    <td><code>#D6A2AC</code></td>
-    <td><code>rgb(214, 162, 172)</code></td>
+    <td><code>#f0c3cb</code></td>
+    <td><code>rgb(240, 195, 203)</code></td>
     <td>Сарнай (Rose)</td>
     <td>Mountain wild flower</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_anis.png" width="23" style="border-radius:4px"></td>
     <td>anis</td>
-    <td><code>#C4675D</code></td>
-    <td><code>rgb(196, 103, 93)</code></td>
+    <td><code>#ff6b6b</code></td>
+    <td><code>rgb(255, 107, 107)</code></td>
     <td>Аньс (Lingonberry)</td>
     <td>Mongolian berry</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_els.png" width="23" style="border-radius:4px"></td>
     <td>els</td>
-    <td><code>#D5B677</code></td>
-    <td><code>rgb(213, 182, 119)</code></td>
+    <td><code>#cca24d</code></td>
+    <td><code>rgb(204, 162, 77)</code></td>
     <td>Элс (Sand)</td>
     <td>Gobi desert</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_nuur.png" width="23" style="border-radius:4px"></td>
     <td>nuur</td>
-    <td><code>#3f8895</code></td>
-    <td><code>rgb(63, 136, 149)</code></td>
+    <td><code>#2b879e</code></td>
+    <td><code>rgb(43, 135, 158)</code></td>
     <td>Нуур (Lake)</td>
     <td>Lake Hovsgol</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_mus.png" width="23" style="border-radius:4px"></td>
     <td>mus</td>
-    <td><code>#A5D3D6</code></td>
-    <td><code>rgb(165, 211, 214)</code></td>
+    <td><code>#9deaea</code></td>
+    <td><code>rgb(157, 234, 234)</code></td>
     <td>Мөс (Ice)</td>
     <td>Winter's snow on frozen lake</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/shono_uvs.png" width="23" style="border-radius:4px"></td>
     <td>uvs</td>
-    <td><code>#4E9A6C</code></td>
-    <td><code>rgb(78, 154, 108)</code></td>
+    <td><code>#80b946</code></td>
+    <td><code>rgb(128, 185, 70)</code></td>
     <td>Өвс (Grass)</td>
     <td>Green Mongolian steppes</td>
   </tr>
@@ -143,117 +143,117 @@ Comming soon...
 </details>
 
 <details>
-<summary>🌆 Үдэш (Udesh) - Evening</summary>
+<summary>🌄 Үдэш (Udesh) - Evening</summary>
 <table>
   <tr>
     <td><img src="assets/swatches/udesh_base.png" width="23" style="border-radius:4px"></td>
     <td>base</td>
-    <td><code>#1C332D</code></td>
-    <td><code>rgb(28, 51, 45)</code></td>
+    <td><code>#183f25</code></td>
+    <td><code>rgb(24, 63, 37)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_surface.png" width="23" style="border-radius:4px"></td>
     <td>surface</td>
-    <td><code>#243E38</code></td>
-    <td><code>rgb(36, 62, 56)</code></td>
+    <td><code>#234d30</code></td>
+    <td><code>rgb(35, 77, 48)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_overlay.png" width="23" style="border-radius:4px"></td>
     <td>overlay</td>
-    <td><code>#2D4B45</code></td>
-    <td><code>rgb(45, 75, 69)</code></td>
+    <td><code>#2e5c3e</code></td>
+    <td><code>rgb(46, 92, 62)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_muted.png" width="23" style="border-radius:4px"></td>
     <td>muted</td>
-    <td><code>#6C8A82</code></td>
-    <td><code>rgb(108, 138, 130)</code></td>
+    <td><code>#65806d</code></td>
+    <td><code>rgb(101, 128, 109)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_text.png" width="23" style="border-radius:4px"></td>
     <td>text</td>
-    <td><code>#D5E6E0</code></td>
-    <td><code>rgb(213, 230, 224)</code></td>
+    <td><code>#f1f4f2</code></td>
+    <td><code>rgb(241, 244, 242)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_low.png" width="23" style="border-radius:4px"></td>
     <td>low</td>
-    <td><code>#2A5D4F</code></td>
-    <td><code>rgb(42, 93, 79)</code></td>
+    <td><code>#2d864b</code></td>
+    <td><code>rgb(45, 134, 75)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_mid.png" width="23" style="border-radius:4px"></td>
     <td>mid</td>
-    <td><code>#3C8A70</code></td>
-    <td><code>rgb(60, 138, 112)</code></td>
+    <td><code>#39ac5f</code></td>
+    <td><code>rgb(57, 172, 95)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_high.png" width="23" style="border-radius:4px"></td>
     <td>high</td>
-    <td><code>#52B38F</code></td>
-    <td><code>rgb(82, 179, 143)</code></td>
+    <td><code>#53c578</code></td>
+    <td><code>rgb(83, 197, 120)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_sarnai.png" width="23" style="border-radius:4px"></td>
     <td>sarnai</td>
-    <td><code>#E6B2BC</code></td>
-    <td><code>rgb(230, 178, 188)</code></td>
+    <td><code>#f0c3cb</code></td>
+    <td><code>rgb(240, 195, 203)</code></td>
     <td>Сарнай (Rose)</td>
     <td>Mountain wild flower</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_anis.png" width="23" style="border-radius:4px"></td>
     <td>anis</td>
-    <td><code>#E47E6E</code></td>
-    <td><code>rgb(228, 126, 110)</code></td>
+    <td><code>#ff6b6b</code></td>
+    <td><code>rgb(255, 107, 107)</code></td>
     <td>Аньс (Lingonberry)</td>
     <td>Mongolian berry</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_els.png" width="23" style="border-radius:4px"></td>
     <td>els</td>
-    <td><code>#E5C788</code></td>
-    <td><code>rgb(229, 199, 136)</code></td>
+    <td><code>#cca24d</code></td>
+    <td><code>rgb(204, 162, 77)</code></td>
     <td>Элс (Sand)</td>
     <td>Gobi desert</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_nuur.png" width="23" style="border-radius:4px"></td>
     <td>nuur</td>
-    <td><code>#4FA8A7</code></td>
-    <td><code>rgb(79, 168, 167)</code></td>
+    <td><code>#2b879e</code></td>
+    <td><code>rgb(43, 135, 158)</code></td>
     <td>Нуур (Lake)</td>
     <td>Lake Hovsgol</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_mus.png" width="23" style="border-radius:4px"></td>
     <td>mus</td>
-    <td><code>#B5E3E6</code></td>
-    <td><code>rgb(181, 227, 230)</code></td>
+    <td><code>#9deaea</code></td>
+    <td><code>rgb(157, 234, 234)</code></td>
     <td>Мөс (Ice)</td>
     <td>Winter's snow on frozen lake</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/udesh_uvs.png" width="23" style="border-radius:4px"></td>
     <td>uvs</td>
-    <td><code>#5EAA7C</code></td>
-    <td><code>rgb(94, 170, 124)</code></td>
+    <td><code>#80b946</code></td>
+    <td><code>rgb(128, 185, 70)</code></td>
     <td>Өвс (Grass)</td>
     <td>Green Mongolian steppes</td>
   </tr>
@@ -261,117 +261,117 @@ Comming soon...
 </details>
 
 <details>
-<summary>🌄 Өглөө (Ogloo) - Morning</summary>
+<summary>🌅 Өглөө (Ogloo) - Morning</summary>
 <table>
   <tr>
     <td><img src="assets/swatches/ogloo_base.png" width="23" style="border-radius:4px"></td>
     <td>base</td>
-    <td><code>#F2F7F5</code></td>
-    <td><code>rgb(242, 247, 245)</code></td>
+    <td><code>#e5f5ea</code></td>
+    <td><code>rgb(229, 245, 234)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_surface.png" width="23" style="border-radius:4px"></td>
     <td>surface</td>
-    <td><code>#E6EEE9</code></td>
-    <td><code>rgb(230, 238, 233)</code></td>
+    <td><code>#c3e4cd</code></td>
+    <td><code>rgb(195, 228, 205)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_overlay.png" width="23" style="border-radius:4px"></td>
     <td>overlay</td>
-    <td><code>#DAE5DE</code></td>
-    <td><code>rgb(218, 229, 222)</code></td>
+    <td><code>#a3d1b1</code></td>
+    <td><code>rgb(163, 209, 177)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_muted.png" width="23" style="border-radius:4px"></td>
     <td>muted</td>
-    <td><code>#8CA9A1</code></td>
-    <td><code>rgb(140, 169, 161)</code></td>
+    <td><code>#8da594</code></td>
+    <td><code>rgb(141, 165, 148)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_text.png" width="23" style="border-radius:4px"></td>
     <td>text</td>
-    <td><code>#1C332D</code></td>
-    <td><code>rgb(28, 51, 45)</code></td>
+    <td><code>#161d18</code></td>
+    <td><code>rgb(22, 29, 24)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_low.png" width="23" style="border-radius:4px"></td>
     <td>low</td>
-    <td><code>#D1E3DB</code></td>
-    <td><code>rgb(209, 227, 219)</code></td>
+    <td><code>#9fdfb5</code></td>
+    <td><code>rgb(159, 223, 181)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_mid.png" width="23" style="border-radius:4px"></td>
     <td>mid</td>
-    <td><code>#A3C7B5</code></td>
-    <td><code>rgb(163, 199, 181)</code></td>
+    <td><code>#66cc87</code></td>
+    <td><code>rgb(102, 204, 135)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_high.png" width="23" style="border-radius:4px"></td>
     <td>high</td>
-    <td><code>#72A591</code></td>
-    <td><code>rgb(114, 165, 145)</code></td>
+    <td><code>#3aac5f</code></td>
+    <td><code>rgb(58, 172, 95)</code></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_sarnai.png" width="23" style="border-radius:4px"></td>
     <td>sarnai</td>
-    <td><code>#B57E8C</code></td>
-    <td><code>rgb(181, 126, 140)</code></td>
+    <td><code>#b93d4d</code></td>
+    <td><code>rgb(185, 61, 77)</code></td>
     <td>Сарнай (Rose)</td>
     <td>Mountain wild flower</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_anis.png" width="23" style="border-radius:4px"></td>
     <td>anis</td>
-    <td><code>#C4675D</code></td>
-    <td><code>rgb(196, 103, 93)</code></td>
+    <td><code>#cc2929</code></td>
+    <td><code>rgb(204, 41, 41)</code></td>
     <td>Аньс (Lingonberry)</td>
     <td>Mongolian berry</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_els.png" width="23" style="border-radius:4px"></td>
     <td>els</td>
-    <td><code>#D5B677</code></td>
-    <td><code>rgb(213, 182, 119)</code></td>
+    <td><code>#df9b23</code></td>
+    <td><code>rgb(223, 155, 35)</code></td>
     <td>Элс (Sand)</td>
     <td>Gobi desert</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_nuur.png" width="23" style="border-radius:4px"></td>
     <td>nuur</td>
-    <td><code>#3f8895</code></td>
-    <td><code>rgb(63, 136, 149)</code></td>
+    <td><code>#0a728c</code></td>
+    <td><code>rgb(10, 114, 140)</code></td>
     <td>Нуур (Lake)</td>
     <td>Lake Hovsgol</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_mus.png" width="23" style="border-radius:4px"></td>
     <td>mus</td>
-    <td><code>#5B9A9D</code></td>
-    <td><code>rgb(91, 154, 157)</code></td>
+    <td><code>#12adad</code></td>
+    <td><code>rgb(18, 173, 173)</code></td>
     <td>Мөс (Ice)</td>
     <td>Winter's snow on frozen lake</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ogloo_uvs.png" width="23" style="border-radius:4px"></td>
     <td>uvs</td>
-    <td><code>#4E9A6C</code></td>
-    <td><code>rgb(78, 154, 108)</code></td>
+    <td><code>#4c890f</code></td>
+    <td><code>rgb(76, 137, 15)</code></td>
     <td>Өвс (Grass)</td>
     <td>Green Mongolian steppes</td>
   </tr>
@@ -383,7 +383,7 @@ Comming soon...
 ## 📦 Quick Start  
 
 ### Neovim
-Looking for the Neovim colorscheme? It's now available separately at: [sarnai.nvim](https://github.com/titembaatar/sarnai.nvim)
+Available at: [sarnai.nvim](https://github.com/titembaatar/sarnai.nvim)
 
 ### Terminals  
 Copy the config files from terminals/ to your terminal’s config directory.
