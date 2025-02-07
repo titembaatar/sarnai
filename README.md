@@ -19,11 +19,11 @@ Comming soon...
 
 ## 🎨 Palette
 <p align="center">
-  <img src="assets/palettes/palette.png">  
+  <img src="assets/palettes/palette.png" style="width: 10%;">  
   <span>•</span>
-  <img src="assets/palettes/palette-bright.png"> 
+  <img src="assets/palettes/palette-bright.png" style="width: 10%;"> 
   <span>•</span>
-  <img src="assets/palettes/palette-light.png">
+  <img src="assets/palettes/palette-light.png" style="width: 10%;">
 </p>
 
 <details>
