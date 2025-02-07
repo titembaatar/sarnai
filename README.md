@@ -422,6 +422,12 @@ Then, update your `config`:
 theme = sarnai-shono
 ```
 
+### KDE Plasma 6
+```bash
+cp -r kde/Sarnai-shono.colors ~/.local/share/color-schemes/Sarnai-shono.colors
+```
+Then in `System Settings` -> `Appearance & Style` -> `Colors & Themes` -> `Colors`, select the theme and apply.
+
 ## 🫱🏼‍🫲🏽 Contributing  
 PRs are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.  
 Need help? Open an issue for:  
