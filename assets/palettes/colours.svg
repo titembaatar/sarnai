@@ -26,12 +26,12 @@
      inkscape:zoom="2.1309203"
      inkscape:cx="384.57562"
      inkscape:cy="14.547705"
-     inkscape:window-width="2550"
-     inkscape:window-height="1394"
+     inkscape:window-width="2552"
+     inkscape:window-height="1396"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g31" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs1" />
   <g
@@ -87,7 +87,7 @@
        y="0"
        inkscape:label="text" />
     <rect
-       style="fill:#d6a2ac;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers;fill-opacity:1"
+       style="fill:#db9fab;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers;fill-opacity:1"
        id="rect1-2-9-4-6-3-1"
        width="13.229167"
        height="13.229167"
@@ -95,7 +95,7 @@
        y="0"
        inkscape:label="pink" />
     <rect
-       style="fill:#c4675d;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers;fill-opacity:1"
+       style="fill:#cb6262;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers;fill-opacity:1"
        id="rect1-2-9-4-6-3-1-7"
        width="13.229167"
        height="13.229167"
@@ -103,7 +103,7 @@
        y="0"
        inkscape:label="red" />
     <rect
-       style="fill:#d5b677;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers;fill-opacity:1"
+       style="fill:#d3ba74;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers;fill-opacity:1"
        id="rect1-2-9-4-6-3-1-7-9"
        width="13.229167"
        height="13.229167"
@@ -111,7 +111,7 @@
        y="0"
        inkscape:label="yellow" />
     <rect
-       style="fill:#3f8895;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers;fill-opacity:1"
+       style="fill:#358d9f;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers;fill-opacity:1"
        id="rect1-2-9-4-6-3-1-7-9-5"
        width="13.229167"
        height="13.229167"
@@ -119,7 +119,7 @@
        y="0"
        inkscape:label="green" />
     <rect
-       style="fill:#a5d3d6;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers;fill-opacity:1"
+       style="fill:#b1e2e2;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers;fill-opacity:1"
        id="rect1-2-9-4-6-3-1-7-9-5-7"
        width="13.229167"
        height="13.229167"
@@ -127,7 +127,7 @@
        y="0"
        inkscape:label="teal" />
     <rect
-       style="fill:#4e9a6c;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers;fill-opacity:1"
+       style="fill:#349856;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers;fill-opacity:1"
        id="rect1-2-9-4-6-3-1-7-9-5-7-0"
        width="13.229167"
        height="13.229167"
@@ -213,7 +213,7 @@
        y="0"
        inkscape:label="text" />
     <rect
-       style="fill:#e6b2bc;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#e4b1bd;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect8"
        width="13.229167"
        height="13.229167"
@@ -221,7 +221,7 @@
        y="0"
        inkscape:label="pink" />
     <rect
-       style="fill:#e47e6e;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#d37e7e;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect9"
        width="13.229167"
        height="13.229167"
@@ -229,7 +229,7 @@
        y="0"
        inkscape:label="red" />
     <rect
-       style="fill:#e5c788;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#d9c589;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect10"
        width="13.229167"
        height="13.229167"
@@ -237,7 +237,7 @@
        y="0"
        inkscape:label="yellow" />
     <rect
-       style="fill:#4fa8a7;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#3ba2b5;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect11"
        width="13.229167"
        height="13.229167"
@@ -245,7 +245,7 @@
        y="0"
        inkscape:label="green" />
     <rect
-       style="fill:#b5e3e6;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#c3e9e9;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect12"
        width="13.229167"
        height="13.229167"
@@ -253,7 +253,7 @@
        y="0"
        inkscape:label="teal" />
     <rect
-       style="fill:#5eaa7c;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#3aae61;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect13"
        width="13.229167"
        height="13.229167"
@@ -291,7 +291,7 @@
      id="g31"
      transform="translate(0,26.458333)">
     <rect
-       style="fill:#f2f7f5;fill-opacity:1;stroke:none;stroke-width:0.26418;stroke-dasharray:none;paint-order:stroke fill markers"
+       style="fill:#e5f0ee;fill-opacity:1;stroke:none;stroke-width:0.26418;stroke-dasharray:none;paint-order:stroke fill markers"
        id="rect17"
        width="13.229167"
        height="13.229167"
@@ -299,7 +299,7 @@
        y="0"
        inkscape:label="bg" />
     <rect
-       style="fill:#e6eee9;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#dde9e7;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect18"
        width="13.229167"
        height="13.229167"
@@ -307,7 +307,7 @@
        y="0"
        inkscape:label="surface" />
     <rect
-       style="fill:#dae5de;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#cde0de;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect19"
        width="13.229167"
        height="13.229167"
@@ -315,7 +315,7 @@
        y="0"
        inkscape:label="overlay" />
     <rect
-       style="fill:#8ca9a1;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#89a49b;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect20"
        width="13.229167"
        height="13.229167"
@@ -323,7 +323,7 @@
        y="0"
        inkscape:label="muted" />
     <rect
-       style="fill:#5c7670;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#6a807c;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect21"
        width="13.229167"
        height="13.229167"
@@ -331,7 +331,7 @@
        y="0"
        inkscape:label="subtle" />
     <rect
-       style="fill:#1c332d;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#283930;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect22"
        width="13.229167"
        height="13.229167"
@@ -339,7 +339,7 @@
        y="0"
        inkscape:label="text" />
     <rect
-       style="fill:#b57e8c;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#b64359;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect23"
        width="13.229167"
        height="13.229167"
@@ -347,7 +347,7 @@
        y="0"
        inkscape:label="pink" />
     <rect
-       style="fill:#c4675d;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#c83232;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect24"
        width="13.229167"
        height="13.229167"
@@ -355,7 +355,7 @@
        y="0"
        inkscape:label="red" />
     <rect
-       style="fill:#d5b677;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#c49a24;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect25"
        width="13.229167"
        height="13.229167"
@@ -363,7 +363,7 @@
        y="0"
        inkscape:label="yellow" />
     <rect
-       style="fill:#3f8895;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#157489;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect26"
        width="13.229167"
        height="13.229167"
@@ -371,7 +371,7 @@
        y="0"
        inkscape:label="green" />
     <rect
-       style="fill:#5b9a9d;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#147676;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect27"
        width="13.229167"
        height="13.229167"
@@ -379,7 +379,7 @@
        y="0"
        inkscape:label="teal" />
     <rect
-       style="fill:#4e9a6c;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#157a3a;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect28"
        width="13.229167"
        height="13.229167"
@@ -387,7 +387,7 @@
        y="0"
        inkscape:label="blue" />
     <rect
-       style="fill:#d1e3db;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#b3e5d8;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect29"
        width="13.229167"
        height="13.229167"
@@ -395,7 +395,7 @@
        y="0"
        inkscape:label="highligth_low" />
     <rect
-       style="fill:#a3c7b5;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#92d3bc;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect30"
        width="13.229167"
        height="13.229167"
@@ -403,7 +403,7 @@
        y="0"
        inkscape:label="highligth_mid" />
     <rect
-       style="fill:#72a591;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+       style="fill:#65be9c;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
        id="rect31"
        width="13.229167"
        height="13.229167"
