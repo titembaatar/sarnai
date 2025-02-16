@@ -82,9 +82,8 @@ local function update_readme()
 
 	-- Generate palette sections
 	local palettes = {
-		{ key = "shono", mn = "🌌 Шөнө", en = "Night" },
-		{ key = "udesh", mn = "🌄 Үдэш", en = "Evening" },
-		{ key = "ogloo", mn = "🌅 Өглөө", en = "Morning" }
+		{ key = "khavar", mn = "🌸 Хавар", en = "Spring" },
+		{ key = "ovol", mn = "❄️ Өвөл", en = "Winter" }
 	}
 	local sections = {}
 
@@ -105,9 +104,8 @@ local function update_readme()
 		-- Create new content
 		local header = "## 🎨 Palette\n"
 		local images = [[<p align="center">
-  <img src="assets/palettes/palette.png" style="width: 33%">
-  <img src="assets/palettes/palette-bright.png" style="width: 33%">
-  <img src="assets/palettes/palette-light.png" style="width: 33%">
+  <img src="assets/palettes/khavar.png" style="width: 33%">
+  <img src="assets/palettes/ovol.png" style="width: 33%">
 </p>
 
 ]]

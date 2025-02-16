@@ -99,9 +99,8 @@ local function generate_terminal_configs(style, name)
 end
 
 local palettes = {
-	shono = require("palettes.shono"),
-	udesh = require("palettes.udesh"),
-	ogloo = require("palettes.ogloo")
+	khavar = require("palettes.khavar"),
+	ovol = require("palettes.ovol"),
 }
 
 for name, palette in pairs(palettes) do
