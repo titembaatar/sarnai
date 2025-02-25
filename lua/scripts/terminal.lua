@@ -35,12 +35,24 @@ cursor.text = "%s"
 cursor.cursor = "%s"
 
 [colors.normal]
-black = "%s"   red = "%s"    green = "%s"  yellow = "%s"
-blue = "%s"    magenta = "%s" cyan = "%s"   white = "%s"
+black = "%s"
+red = "%s"
+green = "%s"
+yellow = "%s"
+blue = "%s"
+magenta = "%s"
+cyan = "%s"
+white = "%s"
 
 [colors.bright]
-black = "%s"   red = "%s"    green = "%s"  yellow = "%s"
-blue = "%s"    magenta = "%s" cyan = "%s"   white = "%s"
+black = "%s"
+red = "%s"
+green = "%s"
+yellow = "%s"
+blue = "%s"
+magenta = "%s"
+cyan = "%s"
+white = "%s"
 ]],
 		colors[0], colors[7], colors[0], colors[7],
 		colors[0], colors[1], colors[2], colors[3],

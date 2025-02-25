@@ -52,9 +52,10 @@ end
 
 local function generate_palette_section(palette, name, mn_title, en_title)
 	local rows = {}
-	local order = { "base", "surface", "overlay", "muted", "text",
-		"low", "mid", "high", "sarnai", "anis", "els",
-		"nuur", "mus", "uvs" }
+	local order = { "base", "surface", "overlay",
+		"muted", "subtle", "text",
+		"low", "mid", "high",
+		"sarnai", "anis", "els", "nuur", "mus", "uvs" }
 
 	for _, color in ipairs(order) do
 		if palette[color] then

@@ -9,7 +9,7 @@ local function generate_swatches(style, name)
 	for color, hex in pairs(style) do
 		os.execute(string.format([[
 			magick -size 23x23 xc:none \
-			-fill "%s" -stroke "#282828" -strokewidth 1 \
+			-fill "%s" -stroke "#172820" -strokewidth 1 \
 			-draw "roundrectangle 0,0 22,22 4,4" \
 			"assets/swatches/%s.png"
 		]], hex, name .. "_" .. color)
