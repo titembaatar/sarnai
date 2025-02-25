@@ -14,9 +14,6 @@ She's the one who made the logo, helped find colors name, refined the palette to
 - **Minimalist Spirit**: Sticking with terminal 16 colors and some variants for bgs and fgs.  
 - **Green Tints**: Because I love green, and I'm tired of blues.
 
-## Gallery  
-Comming soon...
-
 ## 🎨 Palette
 <p align="center">
   <img src="assets/palettes/khavar.png" style="width: 33%">
@@ -55,6 +52,14 @@ Comming soon...
     <td>muted</td>
     <td><code>#4e7e6b</code></td>
     <td><code>rgb(78, 126, 107)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/khavar_subtle.png" width="23" style="border-radius:4px"></td>
+    <td>subtle</td>
+    <td><code>#90bbaa</code></td>
+    <td><code>rgb(144, 187, 170)</code></td>
     <td></td>
     <td></td>
   </tr>
@@ -177,6 +182,14 @@ Comming soon...
     <td></td>
   </tr>
   <tr>
+    <td><img src="assets/swatches/ovol_subtle.png" width="23" style="border-radius:4px"></td>
+    <td>subtle</td>
+    <td><code>#446f5e</code></td>
+    <td><code>rgb(68, 111, 94)</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <td><img src="assets/swatches/ovol_text.png" width="23" style="border-radius:4px"></td>
     <td>text</td>
     <td><code>#13201b</code></td>
@@ -276,8 +289,13 @@ cp -r terminals/kitty/* ~/.config/kitty/themes/
 ```
 Then, update your `kitty.conf`:
 ```conf
-include ./themes/sarnai-shono.conf
+include ./themes/sarnai-khavar.conf
 ```
+
+<p align="center">
+  <img src="./assets/kitty/screenshot.png" style="width: 80%">
+</p>
+<h4 align="center">Kitty Sarnai Khavar</h4>
 
 #### Alacritty
 ```bash
@@ -287,19 +305,25 @@ cp -r terminals/alacritty/* ~/.config/alacritty/themes/
 Then, update your `alacritty.toml`:
 ```toml
 [general]
-import = [
-    "~/.config/alacritty/themes/sarnai-shono.toml"
-]
+import = ["~/.config/alacritty/themes/sarnai-khavar.toml"]
 ```
 
 #### Ghostty
 ```bash
+mkdir -p ~/.config/ghostty/themes/
 cp -r terminals/ghostty/* ~/.config/ghostty/themes/
 ```
 Then, update your `config`:
 ```
-theme = sarnai-shono
+theme = sarnai-khavar
 ```
+
+### Zen Browser
+Copy `zen/chrome` to your [zen's profiles `chrome` folder](https://www.userchrome.org/how-create-userchrome-css.html).
+<p align="center">
+  <img src="./assets/zen/screenshot.png" style="width: 80%">
+</p>
+<h4 align="center">Zen Browser</h4>
 
 ## 🫱🏼‍🫲🏽 Contributing  
 PRs are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.  
