@@ -154,8 +154,8 @@ She's the one who made the logo, helped find colors name, refined the palette to
   <tr>
     <td><img src="assets/swatches/khavar_yargui.png" width="23" style="border-radius:4px"></td>
     <td>yargui</td>
-    <td><code>#cf99e6</code></td>
-    <td><code>rgb(207, 153, 230)</code></td>
+    <td><code>#d5b3e5</code></td>
+    <td><code>rgb(213, 179, 229)</code></td>
     <td>Яргуй (Pasqueflower)</td>
     <td>Flower blooming at spring's dawn</td>
   </tr>

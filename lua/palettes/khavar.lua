@@ -15,5 +15,5 @@ return {
 	uvs = "#80b946",
 	nuur = "#2b879e",
 	mus = "#9deaea",
-	yargui = "#cf99e6",
+	yargui = "#d5b3e5",
 }
