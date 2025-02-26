@@ -1,5 +1,4 @@
----@class Palette
-local ret = {
+return {
 	base = "#172620",
 	surface = "#21362d",
 	overlay = "#2d493d",
@@ -11,15 +10,10 @@ local ret = {
 	high = "#206046",
 	sarnai = "#f0c3cb",
 	anis = "#ff6b6b",
+	chatsalgan = "#e5951a",
 	els = "#cca24d",
+	uvs = "#80b946",
 	nuur = "#2b879e",
 	mus = "#9deaea",
-	uvs = "#80b946",
-	git = {
-		add = "#80b946",
-		change = "#2b879e",
-		delete = "#ff6b6b",
-	}
+	yargui = "cf99e6",
 }
-
-return ret

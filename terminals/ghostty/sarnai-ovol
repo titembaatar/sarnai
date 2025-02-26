@@ -2,17 +2,17 @@ palette = 0=#dceae4
 palette = 1=#cc2929
 palette = 2=#4c890f
 palette = 3=#df9b23
-palette = 4=#12adad
+palette = 4=#0a728c
 palette = 5=#b93d4d
-palette = 6=#0a728c
+palette = 6=#12adad
 palette = 7=#13201b
 palette = 8=#f2fffb
 palette = 9=#e02d2d
 palette = 10=#549711
 palette = 11=#f5ab27
-palette = 12=#14bebe
+palette = 12=#0b7d9a
 palette = 13=#cc4355
-palette = 14=#0b7d9a
+palette = 14=#14bebe
 palette = 15=#15231e
 
 background = #dceae4

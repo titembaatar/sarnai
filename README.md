@@ -108,8 +108,16 @@ She's the one who made the logo, helped find colors name, refined the palette to
     <td>anis</td>
     <td><code>#ff6b6b</code></td>
     <td><code>rgb(255, 107, 107)</code></td>
-    <td>Аньс (Lingonberry)</td>
-    <td>Mongolian berry</td>
+    <td>Аньс (Cowberry)</td>
+    <td>Wild berry</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/khavar_chatsalgan.png" width="23" style="border-radius:4px"></td>
+    <td>chatsalgan</td>
+    <td><code>#e5951a</code></td>
+    <td><code>rgb(229, 149, 26)</code></td>
+    <td>Чацаргана (Hippophae)</td>
+    <td>Juicy berry for syrup</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/khavar_els.png" width="23" style="border-radius:4px"></td>
@@ -118,6 +126,14 @@ She's the one who made the logo, helped find colors name, refined the palette to
     <td><code>rgb(204, 162, 77)</code></td>
     <td>Элс (Sand)</td>
     <td>Gobi desert</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/khavar_uvs.png" width="23" style="border-radius:4px"></td>
+    <td>uvs</td>
+    <td><code>#80b946</code></td>
+    <td><code>rgb(128, 185, 70)</code></td>
+    <td>Өвс (Grass)</td>
+    <td>Green steppes</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/khavar_nuur.png" width="23" style="border-radius:4px"></td>
@@ -133,15 +149,15 @@ She's the one who made the logo, helped find colors name, refined the palette to
     <td><code>#9deaea</code></td>
     <td><code>rgb(157, 234, 234)</code></td>
     <td>Мөс (Ice)</td>
-    <td>Winter's snow on frozen lake</td>
+    <td>Snow on frozen lake</td>
   </tr>
   <tr>
-    <td><img src="assets/swatches/khavar_uvs.png" width="23" style="border-radius:4px"></td>
-    <td>uvs</td>
-    <td><code>#80b946</code></td>
-    <td><code>rgb(128, 185, 70)</code></td>
-    <td>Өвс (Grass)</td>
-    <td>Green Mongolian steppes</td>
+    <td><img src="assets/swatches/khavar_yargui.png" width="23" style="border-radius:4px"></td>
+    <td>yargui</td>
+    <td><code>cf99e6</code></td>
+    <td><code>rgb(207, 153, 230)</code></td>
+    <td>Яргуй (Pasqueflower)</td>
+    <td>Flower blooming at spring's dawn</td>
   </tr>
 </table>
 </details>
@@ -234,8 +250,16 @@ She's the one who made the logo, helped find colors name, refined the palette to
     <td>anis</td>
     <td><code>#cc2929</code></td>
     <td><code>rgb(204, 41, 41)</code></td>
-    <td>Аньс (Lingonberry)</td>
-    <td>Mongolian berry</td>
+    <td>Аньс (Cowberry)</td>
+    <td>Wild berry</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ovol_chatsalgan.png" width="23" style="border-radius:4px"></td>
+    <td>chatsalgan</td>
+    <td><code>#da730c</code></td>
+    <td><code>rgb(218, 115, 12)</code></td>
+    <td>Чацаргана (Hippophae)</td>
+    <td>Juicy berry for syrup</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ovol_els.png" width="23" style="border-radius:4px"></td>
@@ -244,6 +268,14 @@ She's the one who made the logo, helped find colors name, refined the palette to
     <td><code>rgb(223, 155, 35)</code></td>
     <td>Элс (Sand)</td>
     <td>Gobi desert</td>
+  </tr>
+  <tr>
+    <td><img src="assets/swatches/ovol_uvs.png" width="23" style="border-radius:4px"></td>
+    <td>uvs</td>
+    <td><code>#4c890f</code></td>
+    <td><code>rgb(76, 137, 15)</code></td>
+    <td>Өвс (Grass)</td>
+    <td>Green steppes</td>
   </tr>
   <tr>
     <td><img src="assets/swatches/ovol_nuur.png" width="23" style="border-radius:4px"></td>
@@ -259,15 +291,15 @@ She's the one who made the logo, helped find colors name, refined the palette to
     <td><code>#12adad</code></td>
     <td><code>rgb(18, 173, 173)</code></td>
     <td>Мөс (Ice)</td>
-    <td>Winter's snow on frozen lake</td>
+    <td>Snow on frozen lake</td>
   </tr>
   <tr>
-    <td><img src="assets/swatches/ovol_uvs.png" width="23" style="border-radius:4px"></td>
-    <td>uvs</td>
-    <td><code>#4c890f</code></td>
-    <td><code>rgb(76, 137, 15)</code></td>
-    <td>Өвс (Grass)</td>
-    <td>Green Mongolian steppes</td>
+    <td><img src="assets/swatches/ovol_yargui.png" width="23" style="border-radius:4px"></td>
+    <td>yargui</td>
+    <td><code>#a353c6</code></td>
+    <td><code>rgb(163, 83, 198)</code></td>
+    <td>Яргуй (Pasqueflower)</td>
+    <td>Flower blooming at spring's dawn</td>
   </tr>
 </table>
 </details>

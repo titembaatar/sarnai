@@ -86,46 +86,50 @@ local function create_palette(base)
 
 	local dark = {
 		-- Backgrounds
-		base    = base,
-		surface = convert_to_hex(base_h, base_s, base_l + 6),
-		overlay = convert_to_hex(base_h, base_s, base_l + 12),
+		base    		= base,
+		surface 		= convert_to_hex(base_h, base_s, base_l + 6),
+		overlay 		= convert_to_hex(base_h, base_s, base_l + 12),
 		-- Foregrounds
-		muted   = convert_to_hex(base_h, base_s, 40),
-		subtle  = convert_to_hex(base_h, base_s, 65),
-		text    = convert_to_hex(base_h, base_s, 90),
+		muted   		= convert_to_hex(base_h, base_s, 40),
+		subtle  		= convert_to_hex(base_h, base_s, 65),
+		text    		= convert_to_hex(base_h, base_s, 90),
 		-- Highlights
-		high    = convert_to_hex(base_h, 50, 25),
-		mid     = convert_to_hex(base_h, 50, 35),
-		low     = convert_to_hex(base_h, 50, 45),
+		high    		= convert_to_hex(base_h, 50, 25),
+		mid     		= convert_to_hex(base_h, 50, 35),
+		low     		= convert_to_hex(base_h, 50, 45),
 		-- Main colors
-		sarnai  = "#f0c3cb",
-		anis    = "#ff6b6b",
-		els     = "#cca24d",
-		nuur    = "#2b879e",
-		mus     = "#9deaea",
-		uvs     = "#80b946",
+		sarnai  		= "#f0c3cb",
+		anis    		= "#ff6b6b",
+		chatsalgan 	= "#e5951a";
+		els     		= "#cca24d",
+		uvs     		= "#80b946",
+		nuur    		= "#2b879e",
+		mus     		= "#9deaea",
+		yargui 			= "cf99e6",
 	}
 
 	local light = {
 		-- Backgrounds
-		base    = convert_to_hex(base_h, base_s, 100 - base_l),
-		surface = convert_to_hex(base_h, base_s, 100 - base_l - 12),
-		overlay = convert_to_hex(base_h, base_s, 100 - base_l - 24),
+		base    		= convert_to_hex(base_h, base_s, 100 - base_l),
+		surface 		= convert_to_hex(base_h, base_s, 100 - base_l - 12),
+		overlay 		= convert_to_hex(base_h, base_s, 100 - base_l - 24),
 		-- Foregrounds
-		muted   = convert_to_hex(base_h, base_s, 60),
-		subtle  = convert_to_hex(base_h, base_s, 35),
-		text    = convert_to_hex(base_h, base_s, 10),
+		muted   		= convert_to_hex(base_h, base_s, 60),
+		subtle  		= convert_to_hex(base_h, base_s, 35),
+		text    		= convert_to_hex(base_h, base_s, 10),
 		-- Highlights
-		high    = convert_to_hex(base_h, 50, 45),
-		mid     = convert_to_hex(base_h, 50, 35),
-		low     = convert_to_hex(base_h, 50, 25),
+		high    		= convert_to_hex(base_h, 50, 45),
+		mid     		= convert_to_hex(base_h, 50, 35),
+		low     		= convert_to_hex(base_h, 50, 25),
 		-- Main colors
-		sarnai  = "#b93d4d",
-		anis    = "#cc2929",
-		els     = "#df9b23",
-		nuur    = "#0a728c",
-		mus     = "#12adad",
-		uvs     = "#4c890f",
+		sarnai  		= "#b93d4d",
+		anis    		= "#cc2929",
+		chatsalgan	= "#da730c",
+		els     		= "#df9b23",
+		uvs     		= "#4c890f",
+		nuur    		= "#0a728c",
+		mus     		= "#12adad",
+		yargui   		= "#a353c6",
 	}
 
 	return dark, light
@@ -145,7 +149,9 @@ local function write_palette(filename, palette)
 		"base", "surface", "overlay",
 		"muted", "subtle", "text",
 		"low", "mid", "high",
-		"sarnai", "anis", "els", "nuur", "mus", "uvs"
+		"sarnai", "anis", "chatsalgan",
+		"els", "uvs", "nuur",
+		"mus", "yargui",
 	}
 
 	file:write("return {\n")

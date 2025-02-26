@@ -1,12 +1,14 @@
 package.path = package.path .. ";./lua/?.lua"
 
 local color_metadata = {
-	sarnai = { mn = "Сарнай", en = "Rose", desc = "Mountain wild flower" },
-	anis   = { mn = "Аньс", en = "Lingonberry", desc = "Mongolian berry" },
-	els    = { mn = "Элс", en = "Sand", desc = "Gobi desert" },
-	nuur   = { mn = "Нуур", en = "Lake", desc = "Lake Hovsgol" },
-	mus    = { mn = "Мөс", en = "Ice", desc = "Winter's snow on frozen lake" },
-	uvs    = { mn = "Өвс", en = "Grass", desc = "Green Mongolian steppes" }
+	sarnai 			= { mn = "Сарнай", en = "Rose", desc = "Mountain wild flower" },
+	anis   			= { mn = "Аньс", en = "Cowberry", desc = "Wild berry" },
+	chatsalgan 	= { mn = "Чацаргана", en = "Hippophae", desc = "Juicy berry for syrup" },
+	els    			= { mn = "Элс", en = "Sand", desc = "Gobi desert" },
+	uvs    			= { mn = "Өвс", en = "Grass", desc = "Green steppes" },
+	nuur   			= { mn = "Нуур", en = "Lake", desc = "Lake Hovsgol" },
+	mus    			= { mn = "Мөс", en = "Ice", desc = "Snow on frozen lake" },
+	yargui 			= { mn = "Яргуй", en = "Pasqueflower", desc = "Flower blooming at spring's dawn" },
 }
 
 local function hex_to_rgb(hex)
@@ -52,10 +54,14 @@ end
 
 local function generate_palette_section(palette, name, mn_title, en_title)
 	local rows = {}
-	local order = { "base", "surface", "overlay",
+	local order = {
+		"base", "surface", "overlay",
 		"muted", "subtle", "text",
 		"low", "mid", "high",
-		"sarnai", "anis", "els", "nuur", "mus", "uvs" }
+		"sarnai", "anis", "chatsalgan",
+		"els", "uvs", "nuur",
+		"mus", "yargui"
+	}
 
 	for _, color in ipairs(order) do
 		if palette[color] then

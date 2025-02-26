@@ -79,9 +79,9 @@ local function generate_terminal_configs(style, name)
 		[1] = style.anis,
 		[2] = style.uvs,
 		[3] = style.els,
-		[4] = style.mus,
+		[4] = style.nuur,
 		[5] = style.sarnai,
-		[6] = style.nuur,
+		[6] = style.mus,
 		[7] = style.text
 	}
 
