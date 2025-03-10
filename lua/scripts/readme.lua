@@ -1,14 +1,14 @@
 package.path = package.path .. ";./lua/?.lua"
 
 local color_metadata = {
-	sarnai 			= { mn = "Сарнай", en = "Rose", desc = "Mountain wild flower" },
-	anis   			= { mn = "Аньс", en = "Cowberry", desc = "Wild berry" },
-	chatsalgan 	= { mn = "Чацаргана", en = "Hippophae", desc = "Juicy berry for syrup" },
-	els    			= { mn = "Элс", en = "Sand", desc = "Gobi desert" },
-	uvs    			= { mn = "Өвс", en = "Grass", desc = "Green steppes" },
-	nuur   			= { mn = "Нуур", en = "Lake", desc = "Lake Hovsgol" },
-	mus    			= { mn = "Мөс", en = "Ice", desc = "Snow on frozen lake" },
-	yargui 			= { mn = "Яргуй", en = "Pasqueflower", desc = "Flower blooming at spring's dawn" },
+	sarnai     = { mn = "Сарнай", en = "Rose", desc = "Mountain wild flower" },
+	anis       = { mn = "Аньс", en = "Cowberry", desc = "Wild berry" },
+	chatsalgan = { mn = "Чацаргана", en = "Hippophae", desc = "Juicy berry for syrup" },
+	els        = { mn = "Элс", en = "Sand", desc = "Gobi desert" },
+	uvs        = { mn = "Өвс", en = "Grass", desc = "Green steppes" },
+	nuur       = { mn = "Нуур", en = "Lake", desc = "Lake Hovsgol" },
+	mus        = { mn = "Мөс", en = "Ice", desc = "Snow on frozen lake" },
+	yargui     = { mn = "Яргуй", en = "Pasqueflower", desc = "Flower blooming at spring's dawn" },
 }
 
 local function hex_to_rgb(hex)
@@ -20,36 +20,67 @@ local function hex_to_rgb(hex)
 	)
 end
 
+-- New function to convert hex to HSL
+local function hex_to_hsl(hex)
+	hex = hex:gsub("#", "")
+	local r = tonumber(hex:sub(1, 2), 16) / 255
+	local g = tonumber(hex:sub(3, 4), 16) / 255
+	local b = tonumber(hex:sub(5, 6), 16) / 255
+
+	local max = math.max(r, g, b)
+	local min = math.min(r, g, b)
+	local h, s, l
+
+	l = (max + min) / 2
+
+	if max == min then
+		h = 0
+		s = 0
+	else
+		local d = max - min
+		s = l > 0.5 and d / (2 - max - min) or d / (max + min)
+
+		if max == r then
+			h = (g - b) / d + (g < b and 6 or 0)
+		elseif max == g then
+			h = (b - r) / d + 2
+		else
+			h = (r - g) / d + 4
+		end
+
+		h = h / 6
+	end
+
+	h = math.floor(h * 360)
+	s = math.floor(s * 100)
+	l = math.floor(l * 100)
+
+	return string.format("hsl(%d, %d%%, %d%%)", h, s, l)
+end
+
 local function generate_color_row(style, palette_name, color)
 	local meta = color_metadata[color] or {}
 	local hex = style[color]
 	local color_name = color
 	palette_name = string.lower(palette_name)
 
+	-- Format the color names as requested
+	local name_column = color_name
+	if meta.mn and meta.en then
+		name_column = string.format("%s<br>%s<br>%s", color_name, meta.mn, meta.en)
+	end
+
 	local row = string.format([[
   <tr>
     <td><img src="assets/swatches/%s_%s.png" width="23" style="border-radius:4px"></td>
     <td>%s</td>
     <td><code>%s</code></td>
-    <td><code>%s</code></td>]],
-		palette_name, color, color_name, hex, hex_to_rgb(hex)
+    <td><code>%s</code></td>
+  </tr>]],
+		palette_name, color, name_column, hex, hex_to_hsl(hex)
 	)
 
-	row = row .. "\n"
-
-	if meta.mn then
-		row = row .. string.format([[
-    <td>%s (%s)</td>
-    <td>%s</td>]],
-			meta.mn, meta.en, meta.desc
-		)
-	else
-		row = row .. [[
-    <td></td>
-    <td></td>]]
-	end
-
-	return row .. "\n  </tr>"
+	return row
 end
 
 local function generate_palette_section(palette, name, mn_title, en_title)
@@ -63,6 +94,16 @@ local function generate_palette_section(palette, name, mn_title, en_title)
 		"mus", "yargui"
 	}
 
+	-- Generate table header
+	local header = [[
+<table>
+  <tr>
+    <th>Swatch</th>
+    <th>Name</th>
+    <th>Hex</th>
+    <th>HSL</th>
+  </tr>]]
+
 	for _, color in ipairs(order) do
 		if palette[color] then
 			table.insert(rows, generate_color_row(palette, name, color))
@@ -72,11 +113,11 @@ local function generate_palette_section(palette, name, mn_title, en_title)
 	return string.format([[
 <details>
 <summary>%s (%s) - %s</summary>
-<table>
+%s
 %s
 </table>
 </details>]],
-		mn_title, name, en_title, table.concat(rows, "\n"))
+		mn_title, name, en_title, header, table.concat(rows, "\n"))
 end
 
 local function update_readme()
@@ -139,3 +180,4 @@ local function update_readme()
 end
 
 update_readme()
+
