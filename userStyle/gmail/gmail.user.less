@@ -1,0 +1,982 @@
+/* ==UserStyle==
+@name Sarnai Gmail
+@namespace github.com/titembaatar/sarnai/userStyles/gmail
+@homepageURL https://github.com/titembaatar/sarnai
+@version 0.1.0
+@description Mongolian-inspired theme for Gmail
+@author Titembaatar
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["ovol:Ovol*", "khavar:Khavar"]
+@var select darkFlavor "Dark Flavor" ["ovol:Ovol", "khavar:Khavar*"]
+@var select accentColor "Accent" ["sarnai:Sarnai*", "anis:Anis", "chatsalgan:Chatsalgan", "els:Els", "uvs:Uvs", "nuur:Nuur", "mus:Mus", "yargui:Yargui"]
+==/UserStyle== */
+
+@-moz-document domain("mail.google.com") {
+  :root {
+    @media (prefers-color-scheme: light) {
+      #sarnai-theme(@lightFlavor);
+    }
+    @media (prefers-color-scheme: dark) {
+      #sarnai-theme(@darkFlavor);
+    }
+  }
+
+  #sarnai-theme(@flavor) {
+    @sarnai: @sarnai-theme[@@flavor][@sarnai];
+    @anis: @sarnai-theme[@@flavor][@anis];
+    @chatsalgan: @sarnai-theme[@@flavor][@chatsalgan];
+    @els: @sarnai-theme[@@flavor][@els];
+    @uvs: @sarnai-theme[@@flavor][@uvs];
+    @nuur: @sarnai-theme[@@flavor][@nuur];
+    @mus: @sarnai-theme[@@flavor][@mus];
+    @yargui: @sarnai-theme[@@flavor][@yargui];
+    @text: @sarnai-theme[@@flavor][@text];
+    @subtle: @sarnai-theme[@@flavor][@subtle];
+    @muted: @sarnai-theme[@@flavor][@muted];
+    @overlay: @sarnai-theme[@@flavor][@overlay];
+    @surface: @sarnai-theme[@@flavor][@surface];
+    @base: @sarnai-theme[@@flavor][@base];
+    @accent: @sarnai-theme[@@flavor][@@accentColor];
+
+    @base-filter: @sarnai-theme-filters[@@flavor][@base];
+    @text-filter: @sarnai-theme-filters[@@flavor][@text];
+    @els-filter: @sarnai-theme-filters[@@flavor][@els];
+
+    color-scheme: if(@flavor = ovol, light, dark);
+
+    ::selection {
+      background-color: fade(@accent, 30%);
+    }
+
+    input,
+    textarea {
+      &::placeholder {
+        color: @subtle !important;
+      }
+
+      caret-color: @text;
+    }
+
+    #input-styling {
+      input,
+      select,
+      button {
+        background-color: @base;
+        color: @text;
+        border-color: @surface;
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: none;
+      }
+    }
+
+    * {
+      text-shadow: none !important;
+    }
+
+    /* Gmail logo */
+    [src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png"],
+    [src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x_r5.png"] {
+      height: unset !important;
+      width: unset !important;
+      @svg: escape(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="17.727 14.319 30 22.5" width="30" height="22.5"><path fill="@{nuur}" d="M19.773 36.819h4.773V25.227l-6.819-5.114v14.659a2.044 2.044 0 0 0 2.045 2.045"/><path fill="@{uvs}" d="M40.909 36.819h4.773a2.044 2.044 0 0 0 2.045-2.045v-14.66l-6.819 5.114"/><path fill="@{els}" d="M40.909 16.364v8.864l6.819-5.114v-2.727c0-2.529-2.888-3.971-4.909-2.455"/><path fill="@{anis}" d="M24.545 25.227v-8.863l8.181 6.136 8.181-6.136v8.864l-8.181 6.136m-15-13.977v2.727l6.819 5.114v-8.864l-1.909-1.431c-2.025-1.517-4.91-.075-4.91 2.455"/></svg>'
+      );
+      content: url("data:image/svg+xml,@{svg}");
+    }
+
+    /* Tooltips */
+    .T-ays-iP,
+    .gb_Ac {
+      background-color: @base;
+      color: @text;
+    }
+
+    /* Buttons */
+
+    /* Solid primary */
+    .T-I-atl {
+      background-color: @accent;
+      color: @base;
+    }
+
+    /* Transparent primary */
+    .l0,
+    div.b8 .a8k,
+    .bAo > .ad {
+      color: @accent;
+
+      &::before {
+        background-color: @accent;
+      }
+    }
+
+    /* Transparent secondary */
+    .bs0 > .acM,
+    .bti > .btg,
+    .a8Y > .T-I-ax7 {
+      color: @text;
+
+      /* Disabled */
+      &.acN {
+        color: @subtle;
+      }
+
+      &:hover::before {
+        background-color: @subtle;
+      }
+    }
+
+    /* Header and sidebars */
+    .w-asV,
+    .bkL,
+    .bhZ.bym,
+    .bhZ.bjB,
+    .bhZ.bym.baA {
+      background-color: @base;
+    }
+    /* Header icons */
+    .gb_Kc svg,
+    .gb_Pc.gb_Uc svg,
+    .gb_Lc .gb_rd .gb_sd,
+    .gb_Lc .gb_rd .gb_Kc,
+    .gb_Lc .gb_rd .gb_ud,
+    .gb_Pc.gb_Uc .gb_sd {
+      color: @text;
+    }
+    /* Search mail input */
+    .gb_Kc .gb_hd {
+      background-color: @overlay;
+
+      .gb_je,
+      .gb_qe,
+      .gsan_a,
+      .gsas_a,
+      svg {
+        color: @text;
+      }
+    }
+    /* Search mail input on focus */
+    .gb_hd.gb_id {
+      background-color: @surface;
+    }
+    /* Active search / filter modal */
+    .gssb_c {
+      /* Icons */
+      button svg,
+      .asor {
+        filter: @text-filter;
+      }
+
+      /* Recent searches */
+      .aRp,
+      .gssb_e,
+      .gssb_m {
+        background-color: @surface;
+        color: @text;
+      }
+
+      /* Hovered recent searches */
+      .gssb_i {
+        background-color: @surface;
+
+        > .gssb_a {
+          border-left-color: @accent;
+        }
+
+        /* X icon */
+        .gsaq_b {
+          filter: @text-filter;
+        }
+      }
+
+      .aSP,
+      .gssb_e {
+        border-color: @overlay;
+      }
+
+      /* Separator */
+      .gssb_l {
+        background-color: @surface;
+      }
+
+      /* Search results */
+
+      /* Icons */
+      .gsoi_0,
+      .asor_o,
+      .gsoi_msra {
+        filter: @text-filter;
+      }
+
+      /* People involved */
+      .asor_e {
+        color: @subtle;
+      }
+    }
+    /* Pill filters */
+    .H2 {
+      background-color: @surface;
+      border-color: @surface;
+      color: @text;
+      fill: @text;
+
+      &:hover {
+        background-color: @base;
+      }
+
+      &.bws {
+        background-color: @accent;
+        color: @base;
+        fill: @base;
+
+        .HV {
+          filter: @base-filter;
+        }
+
+        &:hover .H1 {
+          background-color: darken(@accent, 5%);
+        }
+      }
+    }
+    .aqc .H2 {
+      border-color: @text;
+      color: @text;
+
+      &.bws {
+        background-color: @overlay;
+        color: @base;
+      }
+    }
+    /* Advanced search/filters modal */
+    .ZF-z6,
+    .ZF-zT,
+    .ZF-Av .lJ,
+    .ZF-Av .lN {
+      background-color: @surface;
+
+      &,
+      .boo > .ZG,
+      .boo .aQl > .J-JN-M-I-Jm,
+      .boo .aaa > .J-JN-M-I-Jm,
+      .boo .ZE > .J-JN-M-I-Jm {
+        color: @text;
+      }
+
+      .btl.acK,
+      .btn::before {
+        filter: @text-filter;
+      }
+
+      /* Text inputs */
+      .nr {
+        background-color: @surface;
+        color: @text;
+
+        &:focus {
+          box-shadow: inset 0 -1px 0 0 @accent;
+        }
+      }
+
+      /* Calendar input */
+      .bs5::after {
+        filter: @text-filter;
+      }
+      .J-JB-KA,
+      .J-JB-KA-JS,
+      .J-JB-KA-Jk,
+      .J-JB-KA-LG {
+        background-color: @surface;
+        color: @text;
+        border-color: @surface;
+
+        /* Past days */
+        .J-JB-KA-Ku-Kk {
+          color: @subtle;
+        }
+        /* Future days */
+        .J-JB-KA-a1R-JB.J-JB-KA-LH,
+        .J-JB-KA-a1R-JB.J-JB-KA-Ku-Kk,
+        .J-JB-KA-JB.J-JB-KA-a1R-JB {
+          color: @text;
+        }
+
+        /* Hovered day */
+        .J-JB-KA-JB:not(.J-JB-KA-K8, .J-JB-KA-KO):hover {
+          color: @base;
+
+          &::before {
+            background-color: fade(@accent, 70%);
+          }
+        }
+
+        /* Selected day */
+        .J-JB-KA-KO {
+          color: @base;
+
+          &::before {
+            background-color: @accent;
+          }
+        }
+
+        /* Unselected today */
+        .J-JB-KA-K8 {
+          color: @base;
+
+          &::before {
+            background-color: @subtle;
+          }
+        }
+      }
+
+      /* Checkbox inputs */
+      .bs1 + .bs3,
+      .btj + .aD {
+        color: @text;
+
+        &::before {
+          filter: @text-filter;
+        }
+      }
+
+      /* Dropdown/select inputs */
+      .J-JN-M-I {
+        color: @text;
+      }
+    }
+
+    /* Sidebar selected item */
+    .TK .TO.nZ:active,
+    .TK .TO.ol:active,
+    .TK .TO.nZ,
+    .TK .TO.ol,
+    .byl .TK .nZ.aBP,
+    .byl .TK .nZ.aS3,
+    .byl .TK .nZ.aS4,
+    .byl .TK .nZ.aS5,
+    .byl .TK .nZ.aS6,
+    .VDSZAf.H5o3mc {
+      background-color: @surface;
+    }
+    .TO.NQ,
+    .n6 .ah9:hover,
+    .n6 .ah9.aiu:hover,
+    .n6 .ah9:focus,
+    .TK .TO:active,
+    .n6 .ah9.aiu:active,
+    .CL:hover,
+    .H5o3mc:not(.VDSZAf):hover,
+    .CL.NQ,
+    .H5o3mc:not(.VDSZAf).NQ {
+      background-color: @overlay;
+    }
+    .byl .TK .TO.nZ > .aHS-bnt .n0,
+    .TK .nZ > .aHS-bnt .bsU,
+    .byl .TK .nZ.aS3 .nU > .n0,
+    .TK .nZ.aS3 .bsU,
+    .byl .TK .nZ.aS4 .nU > .n0,
+    .TK .nZ.aS4 .bsU,
+    .byl .TK .nZ.aS5 .nU > .n0,
+    .TK .nZ.aS5 .bsU,
+    .byl .TK .nZ.aS6 .nU > .n0,
+    .TK .nZ.aS6 .bsU,
+    .TK .TO.nZ .nU > .n0,
+    .TK .ol.NQ .nU > .n0,
+    .TK .TO.ol .nU > .n0,
+    .TK .nZ .bsU,
+    .TK .ol .bsU,
+    .VDSZAf.H5o3mc > .Q7,
+    .TO .nU > .n0,
+    .TO.NQ .nU > .n0,
+    .TO.nZ .nU > .n0,
+    .ah9 > .CJ,
+    .n3 > .CL > .CK,
+    .aAv,
+    .bsU {
+      color: @text;
+    }
+    /* Icons */
+    .nZ > .TN.aHS-bnt .qj,
+    .TO:not(.nZ) > .TN > .qj:not([style*="background-color"]),
+    .n6 .n4 .G-asx,
+    .aAw .aAu,
+    .pM,
+    .TO.nZ > .TN > .qj,
+    .n3 .CL::before {
+      filter: @text-filter;
+    }
+
+    /* Compose email button */
+    .z0 > .L3 {
+      background-color: @accent;
+      color: @base;
+
+      &:focus {
+        background-color: @text;
+      }
+    }
+    .WR .z0 > .L3::before,
+    .WR.anZ .z0 > .L3::before {
+      filter: @base-filter;
+    }
+
+    /* Top section of inbox */
+    .bkK > .nH {
+      background-color: @surface;
+
+      /* Icons */
+      .bzn,
+      .aqJ .amJ,
+      .adg .adk {
+        filter: @text-filter;
+      }
+    }
+    /* Inbox categories */
+    .aKx > .aKz {
+      color: @text;
+    }
+    /* Icons */
+    .aAy > div {
+      filter: @text-filter;
+    }
+    /* Currently selected category */
+    .J-KU-KO::before {
+      background-color: @text;
+    }
+    /* Inbox categories hover */
+    .aRz.J-KU:hover {
+      background-color: @overlay;
+    }
+    /* Email count / pagination */
+    div[aria-label="Show more messages"] {
+      .Dj {
+        color: @text;
+      }
+
+      &::before {
+        background-color: @text;
+      }
+    }
+    .h0 {
+      color: @text;
+    }
+    /* Inbox footer */
+    .md.mj,
+    .aeU .ma,
+    .ma .mb,
+    .ae3 .l6,
+    .l9,
+    .l8,
+    .aiD {
+      color: @text;
+    }
+    /* Storage progress bar */
+    .aiC {
+      background-color: @muted;
+
+      .aiA {
+        background-color: @subtle;
+      }
+    }
+    /* External link icon */
+    .aiz {
+      filter: @text-filter;
+    }
+
+    /* Read emails */
+    .yO {
+      background-color: @surface;
+      color: @text;
+
+      box-shadow: inset 0 -1px 0 0 @surface;
+
+      &:hover {
+        box-shadow:
+          inset 1px 0 0 @surface,
+          inset -1px 0 0 @surface,
+          0 0 4px 0 @overlay,
+          0 0 6px 2px @overlay;
+      }
+    }
+    /* Read email text */
+    .zE {
+      color: @text;
+    }
+    // Select icon
+    .xY > .T-Jo,
+    td.apU > .T-KT.aXw::before,
+    // Important icon
+    .pG .a9q,
+    // Delete/trash icon
+    .aqN,
+    // Hover action icons
+    .bqY li {
+      filter: @text-filter;
+    }
+    /* Important icon filled, star icon filled */
+    .ha .a9q.pH,
+    .a9q.pH,
+    .aoj,
+    td.apU > .T-KT.T-KT-Jp::before {
+      filter: @els-filter;
+    }
+    .pG:hover > .a9q::before {
+      background-color: fade(@els, 30%);
+    }
+    /* Read email dates */
+    .yO > .xW {
+      color: @subtle;
+    }
+    /* Read email summary truncated */
+    .y2 {
+      color: @text;
+    }
+    /* Selected unread emails */
+    .x7 {
+      background-color: @accent;
+      color: @base;
+
+      /* Dates */
+      .xW {
+        color: @base;
+      }
+
+      // Select icon
+      .xY > .T-Jo,
+      // Star icon
+      td.apU > .T-KT.aXw::before,
+      // Important icon
+      .pG .a9q,
+      // Delete/trash icon
+      .aqN,
+      // Hover action icons
+      .bqY li {
+        filter: @base-filter;
+      }
+    }
+    /* Unsubscribe button */
+    .aOd.T-I {
+      color: @text;
+      box-shadow: inset 0 0 0 1px @overlay;
+    }
+    /* Draft text */
+    .boq {
+      color: @anis;
+    }
+    /* No drafts message, trash 30 days message */
+    .TD,
+    .Tm .ya {
+      background-color: @overlay;
+      color: @text;
+    }
+    /* Your social/promotions/updates tab is empty */
+    .aRs {
+      background-color: @surface;
+      color: @subtle;
+
+      .aRv {
+        color: @text;
+      }
+      .aRq {
+        color: @accent;
+      }
+    }
+    /* You could lose access banner */
+    .GR {
+      background-color: @surface;
+
+      /* Primary text */
+      .GX {
+        color: @text;
+      }
+      /* Subtext */
+      .GT {
+        color: @text;
+      }
+
+      /* Dismiss button */
+      .GW {
+        color: @text;
+
+        &::before {
+          background-color: @text;
+        }
+      }
+      /* Add recovery info button */
+      .GV {
+        color: @accent;
+
+        &::before {
+          background-color: @accent;
+        }
+      }
+    }
+    /* Attachments chips */
+    .brc {
+      box-shadow: inset 0 0 0 1px @surface;
+      color: @text;
+
+      &:hover {
+        background-color: @surface;
+      }
+    }
+
+    /* Floating menu */
+    .J-M,
+    .OO.Pa {
+      background-color: @overlay;
+
+      /* Menu section header */
+      .J-awr,
+      .asc {
+        color: @text;
+      }
+
+      /* Menu item */
+
+      .J-N,
+      .J-Ks-KO .J-N-Jz,
+      .J-N-JT .J-N-Jz,
+      .J-N-JW .J-N-Jz,
+      .J-LC,
+      .J-JK,
+      .bmz {
+        color: @text;
+      }
+      /* Disabled */
+      .J-N-JE .J-N-atj,
+      .J-N-JE .J-N-Jz {
+        color: @subtle !important;
+      }
+
+      /* Checkmark, arrow, checkbox, star, calendar icon */
+      .J-Ks-KO .J-N-Jo,
+      .asi .J-Ks-KO::before,
+      .J-Ph-hFsbo,
+      .J-LC-Jo,
+      .bi4 > .T-KT:not(.T-KT-Jp, .byM)::before,
+      .aaA.mYVwse,
+      .J-N-JX {
+        filter: @text-filter;
+      }
+      .bmz.bjF::before {
+        border-color: @subtle;
+      }
+
+      /* Hovered menu item */
+      .J-N-JT,
+      .J-N-JW,
+      .J-LC-JT,
+      .J-LC-JW,
+      .J-JK-JT,
+      .J-JK-JW,
+      .bmz.bk5 {
+        background-color: @overlay;
+        border-color: @muted;
+      }
+
+      /* Menu section divider */
+      .J-Kh {
+        border-top-color: @overlay;
+      }
+    }
+    /* Modal search input */
+    .agd .J-M-JJ input {
+      background-color: @overlay;
+      color: @text;
+    }
+    .bqf {
+      box-shadow: inset 0 -2px 0 0 @overlay;
+
+      &:focus {
+        box-shadow: inset 0 -2px 0 0 @accent;
+      }
+    }
+    /* Magnifying glass icon */
+    .A0 {
+      filter: @text-filter;
+    }
+    /* Edit label modal */
+    div.Kj-JD {
+      background-color: @surface;
+
+      /* Edit label text */
+      span.Kj-JD-K7-K0 {
+        color: @text;
+      }
+
+      /* Close X icon */
+      span.Kj-JD-K7-Jq::after {
+        filter: @text-filter;
+      }
+
+      #input-styling();
+
+      /* Input labels */
+      div.Kj-JD-Jz {
+        color: @text;
+      }
+
+      /* Cancel button */
+      div.Kj-JD-Jl > button,
+      .bBh .Kj-JD-Jl > .J-at1-auR {
+        color: @text;
+      }
+
+      /* Save button */
+      div.Kj-JD-Jl > button.J-at1-atl,
+      div.Kj-JD-Jl > button.J-at1-auR {
+        background-color: @accent;
+        color: @base;
+      }
+    }
+
+    /* Toast notifications */
+    .bAp.b8.UC .vh {
+      background-color: @base;
+      color: @text;
+    }
+    /* Close icon */
+    .b8 .bBe .bBf {
+      filter: @text-filter;
+    }
+
+    /* Compose mail window */
+    /* Top header bar */
+    .Hy.Hy .m,
+    .IG {
+      background-color: @base;
+
+      .Hp,
+      .zu,
+      .H,
+      .Iy .az9 {
+        color: @text;
+      }
+
+      .Hm img,
+      .SB,
+      .b7 .mK,
+      .bAm .aaq .mK,
+      .Un .mK,
+      .HX .mK,
+      .HQ .Un::after {
+        filter: @text-filter;
+      }
+    }
+    .aaZ,
+    .Ap,
+    .Am,
+    .aDg > .aDj,
+    .aoP .Ar,
+    .wO,
+    .aoT,
+    .agP,
+    .aGb,
+    .GQ {
+      color: @text;
+      caret-color: @text;
+
+      &,
+      &::before {
+        background: @surface;
+      }
+    }
+    .gQ,
+    .gO,
+    .oL {
+      color: @subtle;
+    }
+    /* Bottom toolbar icons */
+    .aaA,
+    .btC .dv,
+    .btC .og.T-I-J3,
+    .btC .J-N-JX.og.T-I-J3,
+    .btC .Y1,
+    .btC .Xv.T-I.J-JN-M-I > .J-JN-M-I-JG,
+    .J-JN-M-I-JG,
+    .J-Z-M-I-J6-H > .J-Z-M-I-JG {
+      filter: @text-filter;
+    }
+    /* Floating toolbar (expanded window) */
+    .J-Z {
+      background-color: @base;
+
+      .J-Z-I,
+      .J-Z-M-I {
+        color: @text;
+      }
+    }
+    /* Send button */
+    .gU .v7.T-I:not(.btz),
+    .gU .hG:not(.v6) {
+      background-color: @accent;
+      color: @base;
+    }
+    .hG > .G-asx,
+    .SI .hG > .G-asx {
+      filter: @base-filter;
+    }
+    /* Contact autofill */
+    .afC,
+    .bvx {
+      background: @base;
+
+      /* Contact list item */
+      .agJ {
+        .aL8,
+        .aXS {
+          color: @text;
+        }
+
+        &:hover {
+          background: @surface;
+        }
+      }
+    }
+
+    --pkw-background: @base;
+    --pkw-outline: @surface;
+    --pkw-outline-variant: @surface;
+    --pkw-on-surface-variant: @text;
+    /* Contact chip */
+    .agh,
+    .bbV {
+      background: @surface;
+
+      .afV {
+        background: @surface;
+        color: @text;
+
+        &:hover {
+          background: @surface;
+          color: @text;
+        }
+      }
+    }
+
+    /* Settings */
+    .dt {
+      color: @text;
+    }
+    /* Navigation header */
+    .v {
+      /* Tabs */
+      .fY,
+      .f1 {
+        background-color: @surface;
+
+        .f0 {
+          color: @text;
+        }
+      }
+
+      /* Currently selected tab */
+      .fZ {
+        box-shadow: inset 0 -2px 0 0 @accent;
+      }
+    }
+    /* Main panel */
+    .r4 {
+      background-color: @surface;
+      color: @text;
+
+      /* Dividers */
+      .r7 td,
+      .Jb .J0:not(:last-child) {
+        border-bottom-color: @surface;
+      }
+
+      /* Links */
+      .r7 .e,
+      .sA,
+      .r4 .e,
+      .el {
+        color: @accent;
+      }
+
+      #input-styling();
+      .qK,
+      .qL {
+        background-color: @base;
+      }
+      .nr,
+      .Ar {
+        background-color: @surface;
+        color: @text;
+        border-color: @surface !important;
+      }
+      /* Some buttons */
+      .Uu {
+        box-shadow: inset 0 0 0 1px @surface;
+        color: @accent;
+      }
+    }
+    /* Labels page */
+    .alO {
+      background-color: @surface;
+      color: @text;
+
+      .rb {
+        color: @text;
+      }
+
+      /* Table items */
+      .To.Ze {
+        background-color: @surface;
+      }
+
+      /* Links */
+      .alP {
+        color: @accent;
+      }
+
+      /* Dividers */
+      .rZ {
+        background-color: @surface;
+      }
+    }
+
+    /* Confirm popup modal */
+    div[aria-modal="true"] {
+      --gm3-dialog-refactored-container-color: @surface;
+      --gm3-dialog-refactored-supporting-text-color: @text;
+      --gm3-dialog-refactored-headline-color: @text;
+
+      /* Buttons */
+      [data-mdc-dialog-action="ok"] {
+        background-color: @accent;
+        --gm3-button-text-label-text-color: @base;
+        --gm3-button-text-hover-label-text-color: @base;
+        --gm3-button-text-pressed-label-text-color: @base;
+      }
+
+      [data-mdc-dialog-action="cancel"] {
+        --gm3-button-text-label-text-color: @text;
+        --gm3-button-text-hover-label-text-color: @text;
+        --gm3-button-text-focus-label-text-color: @text;
+        --gm3-button-text-pressed-label-text-color: @text;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: @surface;
+        }
+      }
+    }
+  }
+}
+
+/* deno-fmt-ignore */
+@sarnai-theme: {
+  @ovol:   { @sarnai: #b93d4d; @anis: #cc2929; @chatsalgan: #da730c; @els: #df9b23; @uvs: #4c890f; @nuur: #0a728c; @mus: #12adad; @yargui: #a353c6; @text: #13201b; @subtle: #446f5e; @muted: #81b19e; @overlay: #90bbaa; @surface: #b6d2c7; @base: #dceae4; };
+  @khavar: { @sarnai: #f0c3cb; @anis: #ff6b6b; @chatsalgan: #e5951a; @els: #cca24d; @uvs: #80b946; @nuur: #2b879e; @mus: #9deaea; @yargui: #d5b3e5; @text: #dfece7; @subtle: #90bbaa; @muted: #4e7e6b; @overlay: #2d493d; @surface: #21362d; @base: #172620; };
+};
+
+/* deno-fmt-ignore */
+@sarnai-theme-filters: {
+  @ovol: { @sarnai: brightness(0) saturate(100%) invert(65%) sepia(18%) saturate(1048%) hue-rotate(323deg) brightness(92%) contrast(86%); @anis: brightness(0) saturate(100%) invert(16%) sepia(78%) saturate(7275%) hue-rotate(342deg) brightness(84%) contrast(94%); @chatsalgan: brightness(0) saturate(100%) invert(38%) sepia(81%) saturate(1292%) hue-rotate(356deg) brightness(103%) contrast(99%); @els: brightness(0) saturate(100%) invert(74%) sepia(47%) saturate(4570%) hue-rotate(354deg) brightness(95%) contrast(83%); @uvs: brightness(0) saturate(100%) invert(51%) sepia(25%) saturate(4134%) hue-rotate(76deg) brightness(95%) contrast(66%); @mus: brightness(0) saturate(100%) invert(47%) sepia(76%) saturate(2427%) hue-rotate(166deg) brightness(99%) contrast(97%); @nuur: brightness(0) saturate(100%) invert(30%) sepia(80%) saturate(1850%) hue-rotate(209deg) brightness(94%) contrast(105%); @yargui: brightness(0) saturate(100%) invert(48%) sepia(61%) saturate(538%) hue-rotate(194deg) brightness(102%) contrast(98%); @text: brightness(0) saturate(100%) invert(30%) sepia(10%) saturate(1259%) hue-rotate(196deg) brightness(97%) contrast(91%); @subtle: brightness(0) saturate(100%) invert(59%) sepia(7%) saturate(825%) hue-rotate(195deg) brightness(83%) contrast(91%); @muted: brightness(0) saturate(100%) invert(85%) sepia(7%) saturate(595%) hue-rotate(191deg) brightness(77%) contrast(81%); @overlay: brightness(0) saturate(100%) invert(85%) sepia(8%) saturate(281%) hue-rotate(187deg) brightness(92%) contrast(88%); @surface: brightness(0) saturate(100%) invert(89%) sepia(5%) saturate(140%) hue-rotate(182deg) brightness(109%) contrast(94%); @base: brightness(0) saturate(100%) invert(91%) sepia(1%) saturate(4489%) hue-rotate(196deg) brightness(106%) contrast(82%); };
+  @khavar: { @sarnai: brightness(0) saturate(100%) invert(92%) sepia(5%) saturate(704%) hue-rotate(320deg) brightness(99%) contrast(93%); @anis: brightness(0) saturate(100%) invert(61%) sepia(19%) saturate(997%) hue-rotate(294deg) brightness(104%) contrast(91%); @chatsalgan: brightness(0) saturate(100%) invert(68%) sepia(57%) saturate(278%) hue-rotate(338deg) brightness(98%) contrast(101%); @els: brightness(0) saturate(100%) invert(90%) sepia(70%) saturate(380%) hue-rotate(313deg) brightness(102%) contrast(95%); @uvs: brightness(0) saturate(100%) invert(88%) sepia(6%) saturate(2015%) hue-rotate(63deg) brightness(104%) contrast(78%); @mus: brightness(0) saturate(100%) invert(92%) sepia(12%) saturate(991%) hue-rotate(108deg) brightness(93%) contrast(90%); @nuur: brightness(0) saturate(100%) invert(74%) sepia(20%) saturate(876%) hue-rotate(156deg) brightness(96%) contrast(93%); @yargui: brightness(0) saturate(100%) invert(73%) sepia(7%) saturate(1670%) hue-rotate(195deg) brightness(102%) contrast(99%); @text: brightness(0) saturate(100%) invert(86%) sepia(6%) saturate(879%) hue-rotate(190deg) brightness(100%) contrast(93%); @subtle: brightness(0) saturate(100%) invert(84%) sepia(9%) saturate(767%) hue-rotate(192deg) brightness(84%) contrast(84%); @muted: brightness(0) saturate(100%) invert(56%) sepia(15%) saturate(455%) hue-rotate(192deg) brightness(90%) contrast(88%); @overlay: brightness(0) saturate(100%) invert(34%) sepia(8%) saturate(1015%) hue-rotate(195deg) brightness(99%) contrast(89%); @surface: brightness(0) saturate(100%) invert(19%) sepia(5%) saturate(2844%) hue-rotate(199deg) brightness(91%) contrast(93%); @base: brightness(0) saturate(100%) invert(6%) sepia(4%) saturate(7465%) hue-rotate(202deg) brightness(95%) contrast(90%); };
+};

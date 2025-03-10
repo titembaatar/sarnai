@@ -1,0 +1,136 @@
+/* ==UserStyle==
+@name Sarnai tmux Cheat Sheet
+@namespace github.com/titembaatar/sarnai/userStyle/tmuxcheatsheet
+@homepageURL https://github.com/titembaatar/sarnai/
+@version 0.1.0
+@description Mongolian-inspired theme for Tmux Cheat Sheet
+@author Titembaatar
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["ovol:Ovol*", "khavar:Khavar"]
+@var select darkFlavor "Dark Flavor" ["ovol:Ovol", "khavar:Khavar*"]
+@var select accentColor "Accent" ["sarnai:Sarnai*", "anis:Anis", "chatsalgan:Chatsalgan", "els:Els", "uvs:Uvs", "nuur:Nuur", "mus:Mus", "yargui:Yargui"]
+==/UserStyle== */
+@-moz-document domain("tmuxcheatsheet.com") {
+	:root {
+		@media (prefers-color-scheme: light) {
+			#sarnai-theme(@lightFlavor);
+		}
+		@media (prefers-color-scheme: dark) {
+			#sarnai-theme(@darkFlavor);
+		}
+	}
+
+	:root[data-theme="dark"] {
+		#sarnai-theme(@darkFlavor);
+	}
+	:root[data-theme="light"] {
+		#sarnai-theme(@lightFlavor);
+	}
+
+	#sarnai-theme(@flavor) {
+		@sarnai: @sarnai-theme[@@flavor][@sarnai];
+		@anis: @sarnai-theme[@@flavor][@anis];
+		@chatsalgan: @sarnai-theme[@@flavor][@chatsalgan];
+		@els: @sarnai-theme[@@flavor][@els];
+		@uvs: @sarnai-theme[@@flavor][@uvs];
+		@nuur: @sarnai-theme[@@flavor][@nuur];
+		@mus: @sarnai-theme[@@flavor][@mus];
+		@yargui: @sarnai-theme[@@flavor][@yargui];
+		@text: @sarnai-theme[@@flavor][@text];
+		@subtle: @sarnai-theme[@@flavor][@subtle];
+		@muted: @sarnai-theme[@@flavor][@muted];
+		@overlay: @sarnai-theme[@@flavor][@overlay];
+		@surface: @sarnai-theme[@@flavor][@surface];
+		@base: @sarnai-theme[@@flavor][@base];
+		@accent: @sarnai-theme[@@flavor][@@accentColor];
+
+		color-scheme: if(@flavor =ovol, light, dark);
+
+		::selection {
+			background-color: fade(@accent, 30%);
+		}
+
+		input,
+		textarea {
+			&::placeholder {
+				color: @subtle !important;
+			}
+		}
+
+		body {
+			background-color: @surface;
+			color: @text;
+			padding-top: 1rem;
+		}
+		
+		.navbar, .social {
+			display: none;
+		}
+		
+		h1 {
+			color: @sarnai;
+		}
+		
+		h2, h3, h4, h5, h6 {
+			color: @els;
+		}
+		
+		#cheat-search-input {
+			border-color: @muted;
+		}
+		
+		#cheat-search-input .search-icon svg {
+			fill: @sarnai;
+		}
+		
+		.bg-info {
+			background-color: @base;
+		}
+		
+		.cheatsheet p {
+			color: @muted;
+		}
+		
+		.cheatsheet .cmd {
+			background: @overlay;
+			color: @text;
+		}
+		
+		.cheatsheet .tmuxcmd {
+			background: fade(@uvs, 50%);
+		}
+		
+		.cheatsheet kbd {
+			background: @overlay;
+			color: @text;
+		}
+		
+		.dark .cheatsheet .shortcut {
+			color: @text;
+		}
+		
+		.footer, .footer a {
+			color: @subtle
+		}
+		
+		.back-to-top {
+			background: fade(@base, 50%);
+			color: @els;
+			border: 1px solid @muted;
+			
+			&:hover {
+				background: fade(@base, 75%);
+				color: @anis;
+			}
+		}
+	}
+}
+
+/* deno-fmt-ignore */
+@sarnai-theme: {
+	@ovol: { @sarnai: #b93d4d; @anis: #cc2929; @chatsalgan: #da730c; @els: #df9b23; @uvs: #4c890f; @nuur: #0a728c; @mus: #12adad; @yargui: #a353c6; @text: #13201b; @subtle: #446f5e; @muted: #81b19e; @overlay: #90bbaa; @surface: #b6d2c7; @base: #dceae4;};
+	@khavar: { @sarnai: #f0c3cb; @anis: #ff6b6b; @chatsalgan: #e5951a; @els: #cca24d; @uvs: #80b946; @nuur: #2b879e; @mus: #9deaea; @yargui: #d5b3e5; @text: #dfece7; @subtle: #90bbaa; @muted: #4e7e6b; @overlay: #2d493d; @surface: #21362d; @base: #172620; };
+};
+

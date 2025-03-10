@@ -351,11 +351,15 @@ theme = sarnai-khavar
 ```
 
 ### Zen Browser
-Copy `zen/chrome` to your [zen's profiles `chrome` folder](https://www.userchrome.org/how-create-userchrome-css.html).
+Copy `zen/chrome` to your [zen's profiles `chrome` folder](https://www.userchrome.org/how-create-userchrome-css.html). And add the [sarnai firefox theme](https://addons.mozilla.org/en-US/firefox/addon/sarnai)
 <p align="center">
   <img src="./assets/zen/screenshot.png" style="width: 80%">
 </p>
 <h4 align="center">Zen Browser</h4>
+
+### userStyles
+To use with browser extension **Stylus** ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) or [Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)).
+Download the `[import.json](./userStyle/import.json)` and import inside **Stylus**.
 
 ## 🫱🏼‍🫲🏽 Contributing  
 PRs are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.  

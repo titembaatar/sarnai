@@ -1,0 +1,95 @@
+/* ==UserStyle==
+@name Sarnai GitHub
+@namespace github.com/titembaatar/sarnai/userStyle/github
+@homepageURL https://github.com/titembaatar/sarnai/
+@version 0.1.0
+@description Mongolian-inspired theme for Github
+@author Titembaatar
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["ovol:Ovol*", "khavar:Khavar"]
+@var select darkFlavor "Dark Flavor" ["ovol:Ovol", "khavar:Khavar*"]
+@var select accentColor "Accent" ["sarnai:Sarnai*", "anis:Anis", "chatsalgan:Chatsalgan", "els:Els", "uvs:Uvs", "nuur:Nuur", "mus:Mus", "yargui:Yargui"]
+==/UserStyle== */
+
+@-moz-document domain("<website-domain>") {
+  /* This section applies the light/dark themes automatically based on the user's system theme.
+     Use the below example CSS to start if the website you are theming doesn't have a light/dark mode toggle.
+     For an actual example of this, see https://github.com/catppuccin/userstyles/blob/39288b593278e5efa48007d5fc001292cf910672/styles/brave-search/catppuccin.user.css#L16-L29.
+  */
+  :root {
+    @media (prefers-color-scheme: light) {
+      #sarnai-theme(@lightFlavor);
+    }
+    @media (prefers-color-scheme: dark) {
+      #sarnai-theme(@darkFlavor);
+    }
+  }
+
+  /* If the website you are theming *does* have a light/dark mode toggle,
+     you can conditionally enable light/dark flavors by targeting whatever
+     attribute that website uses to indicate the theme. *The example below gives you an idea of what
+     to look for. The website you are theming may use a class-based approach (e.g. :root.theme-dark),
+     or any of the myriad of other methods like this.*
+     Use the below example CSS to start if this is the case.
+     For an actual example of this, see https://github.com/catppuccin/userstyles/blob/39288b593278e5efa48007d5fc001292cf910672/styles/youtube/catppuccin.user.css#L21-L30.
+  */
+  :root[data-theme="dark"] {
+    #sarnai-theme(@darkFlavor);
+  }
+  :root[data-theme="light"] {
+    #sarnai-theme(@lightFlavor);
+  }
+
+  #sarnai-theme(@flavor) {
+		@sarnai: @sarnai-theme[@@flavor][@sarnai];
+    @anis: @sarnai-theme[@@flavor][@anis];
+    @chatsalgan: @sarnai-theme[@@flavor][@chatsalgan];
+    @els: @sarnai-theme[@@flavor][@els];
+    @uvs: @sarnai-theme[@@flavor][@uvs];
+    @nuur: @sarnai-theme[@@flavor][@nuur];
+    @mus: @sarnai-theme[@@flavor][@mus];
+    @yargui: @sarnai-theme[@@flavor][@yargui];
+    @text: @sarnai-theme[@@flavor][@text];
+    @subtle: @sarnai-theme[@@flavor][@subtle];
+    @muted: @sarnai-theme[@@flavor][@muted];
+    @overlay: @sarnai-theme[@@flavor][@overlay];
+    @surface: @sarnai-theme[@@flavor][@surface];
+    @base: @sarnai-theme[@@flavor][@base];
+    @accent: @sarnai-theme[@@flavor][@@accentColor];
+
+    color-scheme: if(@flavor = ovol, light, dark);
+
+    ::selection {
+      background-color: fade(@accent, 30%);
+    }
+
+    input,
+    textarea {
+      &::placeholder {
+        color: @subtle !important;
+      }
+    }
+
+    /* Start styling your website here: */
+    background-color: @base;
+
+    /* If you need to specify an overwrite specific to a flavor
+     *  (e.g. only when the flavor is set to latte), you can use a `when` guard clause. */
+    & when (@flavor = ovol) {
+      /* ... */
+    }
+    /* You can also negate the statement above by using
+     *  a `when not` guard clause. */
+    & when not(@flavor = ovol) {
+      /* ... */
+    }
+  }
+}
+
+/* deno-fmt-ignore */
+@sarnai-theme: {
+  @ovol:   { @sarnai: #b93d4d; @anis: #cc2929; @chatsalgan: #da730c; @els: #df9b23; @uvs: #4c890f; @nuur: #0a728c; @mus: #12adad; @yargui: #a353c6; @text: #13201b; @subtle: #446f5e; @muted: #81b19e; @overlay: #90bbaa; @surface: #b6d2c7; @base: #dceae4; };
+  @khavar: { @sarnai: #f0c3cb; @anis: #ff6b6b; @chatsalgan: #e5951a; @els: #cca24d; @uvs: #80b946; @nuur: #2b879e; @mus: #9deaea; @yargui: #d5b3e5; @text: #dfece7; @subtle: #90bbaa; @muted: #4e7e6b; @overlay: #2d493d; @surface: #21362d; @base: #172620; };
+};

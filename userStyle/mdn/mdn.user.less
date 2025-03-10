@@ -1,0 +1,238 @@
+/* ==UserStyle==
+@name Sarnai Mdn
+@namespace github.com/titembaatar/sarnai/userStyles/mdn
+@homepageURL https://github.com/titembaatar/sarnai
+@version 0.1.0
+@description Mongolian-inspired theme for Mdn
+@author Titembaatar
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["ovol:Ovol*", "khavar:Khavar"]
+@var select darkFlavor "Dark Flavor" ["ovol:Ovol", "khavar:Khavar*"]
+@var select accentColor "Accent" ["sarnai:Sarnai*", "anis:Anis", "chatsalgan:Chatsalgan", "els:Els", "uvs:Uvs", "nuur:Nuur", "mus:Mus", "yargui:Yargui"]
+==/UserStyle== */
+
+#sarnai-theme(@flavor) {
+  @sarnai: @sarnai-theme[@@flavor][@sarnai];
+  @anis: @sarnai-theme[@@flavor][@anis];
+  @chatsalgan: @sarnai-theme[@@flavor][@chatsalgan];
+  @els: @sarnai-theme[@@flavor][@els];
+  @uvs: @sarnai-theme[@@flavor][@uvs];
+  @mus: @sarnai-theme[@@flavor][@mus];
+  @nuur: @sarnai-theme[@@flavor][@nuur];
+  @yargui: @sarnai-theme[@@flavor][@yargui];
+  @text: @sarnai-theme[@@flavor][@text];
+  @subtle: @sarnai-theme[@@flavor][@subtle];
+  @muted: @sarnai-theme[@@flavor][@muted];
+  @overlay: @sarnai-theme[@@flavor][@overlay];
+  @surface: @sarnai-theme[@@flavor][@surface];
+  @base: @sarnai-theme[@@flavor][@base];
+  @accent: @sarnai-theme[@@flavor][@@accentColor];
+
+  color-scheme: if(@flavor = ovol, light, dark);
+
+  ::selection {
+    background-color: fade(@accent, 30%);
+  }
+
+  input,
+  textarea {
+    &::placeholder {
+      color: @subtle !important;
+    }
+  }
+
+  --text-primary: @text;
+  --text-secondary: @subtle;
+  --text-active: @muted;
+  --text-inactive: fade(@subtle, 60%);
+  --text-link: @accent;
+  --text-visited: lighten(saturate(@accent, -20%), -20%);
+  --text-invert: @surface;
+  --background-primary: @surface;
+  --background-secondary: @base;
+  --background-tertiary: @base;
+  --background-toc-active: @base;
+  --background-mark-yellow: fade(@els, 40%);
+  --background-mark-green: fade(@uvs, 40%);
+  --background-information: fade(@nuur, 10%);
+  --background-warning: fade(@anis, 10%);
+  --background-critical: fade(@anis, 10%);
+  --background-success: fade(@uvs, 10%);
+  --border-primary: @overlay;
+  --border-secondary: @overlay;
+  --button-primary-default: @text;
+  --button-primary-hover: @subtle;
+  --button-primary-active: @muted;
+  --button-primary-inactive: @text;
+  --button-secondary-default: @overlay;
+  --button-secondary-hover: @overlay;
+  --button-secondary-active: @muted;
+  --button-secondary-inactive: @overlay;
+  --button-secondary-border-focus: @nuur;
+  --button-secondary-border-red: @anis;
+  --button-secondary-border-red-focus: @anis;
+  --icon-primary: @text;
+  --icon-secondary: @subtle;
+  --icon-information: @nuur;
+  --icon-warning: @chatsalgan;
+  --icon-critical: @anis;
+  --icon-success: @uvs;
+  --accent-primary: @accent;
+  --accent-primary-engage: fade(@accent, 10%);
+  --accent-secondary: @accent;
+  --accent-tertiary: fade(saturate(@accent, 10%), 10%);
+  --shadow-01: 0 1px 2px fade(@text, 20%);
+  --shadow-02: 0 1px 6px fade(@text, 20%);
+  --focus-01: 0 0 0 3px fade(@text, 50%);
+  --field-focus-border: @text;
+  --code-token-tag: @yargui;
+  --code-token-punctuation: @subtle;
+  --code-token-attribute-name: @nuur;
+  --code-token-attribute-value: @chatsalgan;
+  --code-token-comment: @subtle;
+  --code-token-default: @text;
+  --code-token-selector: @yargui;
+  --code-token-class-selector: @els;
+  --code-token-pseudo-class: @sarnai;
+  --code-token-variable-2: @sarnai;
+  --code-token-at-rule: @sarnai;
+  --code-token-meta: @muted;
+  --code-background-inline: @base;
+  --code-background-block: @base;
+  --notecard-link-color: @text;
+  --scrollbar-bg: transparent;
+  --scrollbar-color: hsla(0, 0%, 100%, 0.25);
+  --category-color: @mus;
+  --category-color-background: fade(@mus, 40%);
+  --code-color: lighten(@mus, 10%);
+  --mark-color: darken(@mus, 30%);
+  --plus-accent-color: @anis;
+  --html-accent-color: @anis;
+  --css-accent-color: @nuur;
+  --js-accent-color: @els;
+  --http-accent-color: @uvs;
+  --apis-accent-color: @yargui;
+  --learn-accent-color: @sarnai;
+  --plus-code-color: saturate(@anis, 10%);
+  --html-code-color: saturate(@anis, 10%);
+  --css-code-color: saturate(@nuur, 10%);
+  --js-code-color: saturate(@els, 10%);
+  --http-code-color: saturate(@uvs, 10%);
+  --apis-code-color: saturate(@yargui, 10%);
+  --learn-code-color: saturate(@sarnai, 10%);
+  --plus-mark-color: darken(@anis, 30%);
+  --html-mark-color: darken(@anis, 30%);
+  --css-mark-color: darken(@nuur, 30%);
+  --js-mark-color: darken(@els, 30%);
+  --http-mark-color: darken(@uvs, 30%);
+  --apis-mark-color: darken(@yargui, 30%);
+  --learn-mark-color: darken(@sarnai, 30%);
+  --plus-accent-background-color: fade(@anis, 30%);
+  --html-accent-background-color: fade(@anis, 30%);
+  --css-accent-background-color: fade(@nuur, 30%);
+  --js-accent-background-color: fade(@els, 30%);
+  --http-accent-background-color: fade(@uvs, 30%);
+  --apis-accent-background-color: fade(@yargui, 30%);
+  --learn-accent-background-color: fade(@sarnai, 30%);
+  --plus-accent-engage: fade(@anis, 70%);
+  --html-accent-engage: fade(@anis, 70%);
+  --css-accent-engage: fade(@nuur, 70%);
+  --js-accent-engage: fade(@els, 70%);
+  --http-accent-engage: fade(@uvs, 70%);
+  --apis-accent-engage: fade(@yargui, 70%);
+  --learn-accent-engage: fade(@sarnai, 70%);
+  --modal-backdrop-color: fade(@base, 70%);
+  --selection-background-color: fade(@overlay, 60%);
+  --text-primary-red: @anis;
+  --text-primary-green: @uvs;
+  --text-primary-blue: @nuur;
+  --text-primary-yellow: @els;
+  --collections-link: @sarnai;
+  --collections-header: darken(@anis, 30%);
+  --collections-mandala: darken(@anis, 20%);
+  --collections-icon: darken(@anis, 10%);
+  --updates-link: @mus;
+  --updates-header: @base;
+  --updates-mandala: lighten(@mus, 10%);
+  --updates-icon: @mus;
+  --ai-help-link: @uvs;
+  --ai-help-header: @base;
+  --ai-help-mandala: lighten(@uvs, 10%);
+  --ai-help-icon: @uvs;
+  --form-limit-color: @muted;
+  --form-limit-color-emphasis: @muted;
+  --form-invalid-color: @anis;
+  --form-invalid-focus-color: @sarnai;
+  --form-invalid-focus-effect-color: fade(@sarnai, 20%);
+  --baseline-high-bg: hsl(
+    hue(@uvs),
+    saturation(@uvs),
+    lightness(@surface)
+  );
+  --baseline-high-engine-bg: hsl(
+    hue(@uvs),
+    saturation(@uvs),
+    lightness(@surface)
+  );
+  --baseline-high-check: @uvs;
+  --baseline-low-bg: hsl(hue(@nuur), saturation(@nuur), lightness(@surface));
+  --baseline-low-engine-bg: hsl(
+    hue(@nuur),
+    saturation(@nuur),
+    lightness(@surface)
+  );
+  --baseline-low-check: @nuur;
+  --baseline-low-pill-bg: @nuur;
+  --baseline-low-pill-color: @surface;
+  --baseline-limited-bg: @surface;
+  --baseline-limited-engine-bg: @surface;
+  --baseline-limited-check: @uvs;
+  --baseline-limited-cross: @chatsalgan;
+}
+
+@-moz-document domain("developer.mozilla.org") {
+  .light {
+    #sarnai-theme(@lightFlavor);
+  }
+
+  .dark {
+    #sarnai-theme(@darkFlavor);
+  }
+
+  /* stylelint-disable selector-not-notation */
+  :root:not(.light):not(.dark) {
+    @media (prefers-color-scheme: light) {
+      #sarnai-theme(@lightFlavor);
+    }
+    @media (prefers-color-scheme: dark) {
+      #sarnai-theme(@darkFlavor);
+    }
+  }
+  /* stylelint-enable selector-not-notation */
+}
+
+@-moz-document domain("interactive-examples.mdn.mozilla.net") {
+  .theme-light {
+    #sarnai-theme(@lightFlavor);
+  }
+  .theme-dark {
+    #sarnai-theme(@darkFlavor);
+  }
+
+  :root {
+    @media (prefers-color-scheme: light) {
+      #sarnai-theme(@lightFlavor);
+    }
+    @media (prefers-color-scheme: dark) {
+      #sarnai-theme(@darkFlavor);
+    }
+  }
+}
+
+/* deno-fmt-ignore */
+@sarnai-theme: {
+  @ovol:   { @sarnai: #b93d4d; @anis: #cc2929; @chatsalgan: #da730c; @els: #df9b23; @uvs: #4c890f; @nuur: #0a728c; @mus: #12adad; @yargui: #a353c6; @text: #13201b; @subtle: #446f5e; @muted: #81b19e; @overlay: #90bbaa; @surface: #b6d2c7; @base: #dceae4; };
+  @khavar: { @sarnai: #f0c3cb; @anis: #ff6b6b; @chatsalgan: #e5951a; @els: #cca24d; @uvs: #80b946; @nuur: #2b879e; @mus: #9deaea; @yargui: #d5b3e5; @text: #dfece7; @subtle: #90bbaa; @muted: #4e7e6b; @overlay: #2d493d; @surface: #21362d; @base: #172620; };
+};
