@@ -3,6 +3,7 @@
 @namespace github.com/titembaatar/sarnai/userStyles/reddit
 @homepageURL https://github.com/titembaatar/sarnai
 @version 0.1.0
+@updateURL https://github.com/titembaatar/sarnai/raw/refs/heads/main/userStyle/reddit/reddit.user.less
 @description Mongolian-inspired theme for Reddit
 @author Titembaatar
 @license MIT
@@ -78,10 +79,10 @@
     --color-neutral-background-medium: @surface !important;
     --color-neutral-background-strong: @base !important;
     --color-neutral-background-hover: @surface !important;
-    --color-neutral-border: @surface !important;
-    --color-neutral-border-medium: @surface !important;
-    --color-neutral-border-weak: @surface !important;
-    --color-neutral-border-strong: @overlay !important;
+    --color-neutral-border: @overlay !important;
+    --color-neutral-border-medium: @muted !important;
+    --color-neutral-border-weak: @overlay !important;
+    --color-neutral-border-strong: @subtle !important;
     --color-primary: @accent !important;
     --color-primary-hover: lighten(@accent, 10%) !important;
     --color-primary-visited: @yargui !important;
@@ -700,11 +701,11 @@
     }
 
     ol._container_1t62i_1 {
-      border-color: @surface !important;
+      border-color: @overlay !important;
     }
 
     ol._container_1t62i_1 > li {
-      border-color: @surface !important;
+      border-color: @overlay !important;
     }
 
     ol._container_1t62i_1 > li > div {
@@ -1015,7 +1016,7 @@
 
     /* border between uela */
     ._1KrMye71CT332tKKKUWAj6:not(:last-of-type) {
-      border-bottom-color: @surface;
+      border-bottom-color: @overlay;
     }
 
     /* follower color */

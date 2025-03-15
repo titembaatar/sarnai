@@ -3,6 +3,7 @@
 @namespace github.com/titembaatar/sarnai/userStyles/twitter
 @homepageURL https://github.com/titembaatar/sarnai
 @version 0.1.0
+@updateURL https://github.com/titembaatar/sarnai/raw/refs/heads/main/userStyle/twitter/twitter.user.less
 @description Mongolian-inspired theme for Twitter
 @author Titembaatar
 @license MIT
@@ -57,7 +58,7 @@
     }
 
     body.LightsOut {
-      --border-color: @surface;
+      --border-color: @overlay;
       --color: @muted;
       --color-emphasis: @text;
       --hover-bg-color: @surface;
@@ -173,23 +174,23 @@
     // borders
     .r-1kqtdi0,
     .r-1roi411 {
-      border-color: @surface;
+      border-color: @overlay;
     }
 
     .r-1igl3o0 {
-      border-bottom-color: @surface;
+      border-bottom-color: @overlay;
     }
 
     .r-2sztyj {
-      border-top-color: @surface;
+      border-top-color: @overlay;
     }
 
     .r-1aihyag {
-      border-right-color: @surface;
+      border-right-color: @overlay;
     }
 
     .r-1wyyjkm {
-      border-left-color: @subtle; // border when replying to a dm
+      border-left-color: @overlay; // border when replying to a dm
     }
 
     // is this post relevant to you?
@@ -202,17 +203,17 @@
     .r-1bnu78o,
     .r-z32n2g, // search bar
     .r-1m3jxhj {
-      background-color: @surface;
+      background-color: @overlay;
     }
 
     // base color border
     .r-1xc7w19 {
-      border-color: @surface;
+      border-color: @overlay;
     }
 
     // active border for dms
     .r-1pbtemp {
-      border-right-color: @accent;
+      border-right-color: @overlay;
     }
 
     // accent color borders
@@ -565,7 +566,7 @@
     [style*="color: rgb(182, 185, 188)"]:not(
       [style*="background-color: rgb(182, 185, 188)"]
     ) {
-      color: @muted !important;
+      color: @subtle !important;
     }
 
     // retweets color
@@ -1012,4 +1013,3 @@
   @ovol:   { @sarnai: #b93d4d; @anis: #cc2929; @chatsalgan: #da730c; @els: #df9b23; @uvs: #4c890f; @nuur: #0a728c; @mus: #12adad; @yargui: #a353c6; @text: #13201b; @subtle: #446f5e; @muted: #81b19e; @overlay: #90bbaa; @surface: #b6d2c7; @base: #dceae4; };
   @khavar: { @sarnai: #f0c3cb; @anis: #ff6b6b; @chatsalgan: #e5951a; @els: #cca24d; @uvs: #80b946; @nuur: #2b879e; @mus: #9deaea; @yargui: #d5b3e5; @text: #dfece7; @subtle: #90bbaa; @muted: #4e7e6b; @overlay: #2d493d; @surface: #21362d; @base: #172620; };
 };
-
