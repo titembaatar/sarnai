@@ -1,5 +1,6 @@
 /* Sarnai userContent.css*/
 @media (prefers-color-scheme: dark) {
+
   /* Common variables affecting all pages */
   @-moz-document url-prefix("about:") {
     :root {
@@ -69,7 +70,8 @@
       --zen-primary-color: #f0c3cb !important;
     }
 
-    groupbox , moz-card{
+    groupbox,
+    moz-card {
       background: #21362d !important;
     }
 
@@ -83,45 +85,45 @@
       background-color: #21362d !important;
     }
 
-		.identity-color-blue {
-			--identity-tab-color: #2b879e !important;
-			--identity-icon-color: #2b879e !important;
-		}
+    .identity-color-blue {
+      --identity-tab-color: #2b879e !important;
+      --identity-icon-color: #2b879e !important;
+    }
 
-		.identity-color-turquoise {
-			--identity-tab-color: #9deaea !important;
-			--identity-icon-color: #9deaea !important;
-		}
+    .identity-color-turquoise {
+      --identity-tab-color: #9deaea !important;
+      --identity-icon-color: #9deaea !important;
+    }
 
-		.identity-color-green {
-			--identity-tab-color: #80b946 !important;
-			--identity-icon-color: #80b946 !important;
-		}
+    .identity-color-green {
+      --identity-tab-color: #80b946 !important;
+      --identity-icon-color: #80b946 !important;
+    }
 
-		.identity-color-yellow {
-			--identity-tab-color: #cca24d !important;
-			--identity-icon-color: #cca24d !important;
-		}
+    .identity-color-yellow {
+      --identity-tab-color: #cca24d !important;
+      --identity-icon-color: #cca24d !important;
+    }
 
-		.identity-color-orange {
-			--identity-tab-color: #cca24d !important;
-			--identity-icon-color: #cca24d !important;
-		}
+    .identity-color-orange {
+      --identity-tab-color: #cca24d !important;
+      --identity-icon-color: #cca24d !important;
+    }
 
-		.identity-color-red {
-			--identity-tab-color: #ff6b6b !important;
-			--identity-icon-color: #ff6b6b !important;
-		}
+    .identity-color-red {
+      --identity-tab-color: #ff6b6b !important;
+      --identity-icon-color: #ff6b6b !important;
+    }
 
-		.identity-color-pink {
-			--identity-tab-color: #f0c3cb !important;
-			--identity-icon-color: #f0c3cb !important;
-		}
+    .identity-color-pink {
+      --identity-tab-color: #f0c3cb !important;
+      --identity-icon-color: #f0c3cb !important;
+    }
 
-		.identity-color-purple {
-			--identity-tab-color: #f0c3cb !important;
-			--identity-icon-color: #f0c3cb !important;
-		}
+    .identity-color-purple {
+      --identity-tab-color: #f0c3cb !important;
+      --identity-icon-color: #f0c3cb !important;
+    }
   }
 
   /* Variables and styles specific to about:addons */
