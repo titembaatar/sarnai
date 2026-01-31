@@ -1,0 +1,27 @@
+# SARNAI OVOL FOR SWAY
+
+set $base       #dceae4
+set $surface    #b6d2c7
+set $overlay    #90bbaa
+set $muted      #81b19e
+set $subtle     #446f5e
+set $text       #13201b
+set $sarnai     #b93d4d
+set $anis       #cc2929
+set $chatsalgan #da730c
+set $els        #df9b23
+set $uvs        #4c890f
+set $nuur       #0a728c
+set $mus        #12adad
+set $yargui     #a353c6
+
+set $accent     $sarnai
+
+# target                title    bg      text   indicator border
+client.focused          $base    $accent $base  $accent   $accent
+client.focused_inactive $muted   $base   $muted $muted    $muted
+client.unfocused        $muted   $base   $muted $accent   $muted
+client.urgent           $anis    $base   $anis  $surface  $anis
+client.placeholder      $surface $base   $text  $surface  $surface
+client.background       $base
+

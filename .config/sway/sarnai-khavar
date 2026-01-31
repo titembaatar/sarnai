@@ -1,0 +1,27 @@
+# SARNAI KHAVAR FOR SWAY
+
+set $base       #172620
+set $surface    #21362d
+set $overlay    #2d493d
+set $muted      #4e7e6b
+set $subtle     #90bbaa
+set $text       #dfece7
+set $sarnai     #f0c3cb
+set $anis       #ff6b6b
+set $chatsalgan #e5951a
+set $els        #cca24d
+set $uvs        #80b946
+set $nuur       #2b879e
+set $mus        #9deaea
+set $yargui     #d5b3e5
+
+set $accent     $sarnai
+
+# target                title    bg      text   indicator border
+client.focused          $base    $accent $base  $accent   $accent
+client.focused_inactive $muted   $base   $muted $muted    $muted
+client.unfocused        $muted   $base   $muted $accent   $muted
+client.urgent           $anis    $base   $anis  $surface  $anis
+client.placeholder      $surface $base   $text  $surface  $surface
+client.background       $base
+
