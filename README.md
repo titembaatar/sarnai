@@ -1,18 +1,13 @@
 <h3 align="center">sarnai</h3>
 <h6 align="center">ᠰᠠᠷᠠᠨᠠᠢ</h6>
-<br/>
-<p align="center">
-  <a href="https://github.com/titembaatar/sarnai"><img src="https://img.shields.io/badge/SARNAI-v0.1.0-c7958d?style=for-the-badge&logo=github"></a>
-  <a href="https://github.com/titembaatar/sarnai/blob/main/LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-9d4a40?style=for-the-badge"></a>
-</p>
 
 sarnai (ᠰᠠᠷᠠᠨᠠᠢ) means "rose" in Mongolian, my favourite colour, but most of all, the name of my beloved wife.
-She's the one who made the logo, helped find colors name, refined the palette to be more authentic. 
+She's the one who helped find colors name, refined the palette to be more authentic.
 
-## 🇲🇳 Philosophy  
-- **Readability First**: Good contrast for clarity, but soft enough for long sessions.  
-- **Minimalist Spirit**: Sticking with terminal 16 colors and some variants for bgs and fgs.  
-- **Green Tints**: Because I love green, and I'm tired of blues.
+## Philosophy
+- **Readability**: Good contrast for clarity, but soft enough for long sessions.
+- **Minimalist**: Sticking with terminal 16 colors and some variants.
+- **Green**: Because I love green, and I'm tired of blues.
 
 ## 🎨 Palette
 <p align="center">
@@ -21,7 +16,7 @@ She's the one who made the logo, helped find colors name, refined the palette to
 </p>
 
 <details>
-<summary>🌸 Хавар (Khavar) - Spring</summary>
+<summary>Хавар (Khavar) - Spring</summary>
 <table>
   <tr>
     <th>Swatch</th>
@@ -135,7 +130,7 @@ She's the one who made the logo, helped find colors name, refined the palette to
 </details>
 
 <details>
-<summary>❄️ Өвөл (Ovol) - Winter</summary>
+<summary>Өвөл (Ovol) - Winter</summary>
 <table>
   <tr>
     <th>Swatch</th>
@@ -248,63 +243,92 @@ She's the one who made the logo, helped find colors name, refined the palette to
 </table>
 </details>
 
----
-
-## 📦 Quick Start  
-
+## Quick Start
 ### Neovim
-Available at: [sarnai.nvim](https://github.com/titembaatar/sarnai.nvim)
+Available at: [sarnai.nvim](https://codeberg.org/titembaatar/sarnai.nvim)
 
-### Terminals  
-Copy the config files from terminals/ to your terminal’s config directory.
-
-#### Kitty
+### Sway
 ```bash
-mkdir -p ~/.config/kitty/themes/
-cp -r terminals/kitty/* ~/.config/kitty/themes/
+cp -r ./.config/sway/sarnai "$HOME"/.config/sway/
 ```
-Then, update your `kitty.conf`:
-```conf
-include ./themes/sarnai-khavar.conf
+Then, add to your `config`:
 ```
+# Dark
+include ./sarnai-khavar
+# Light
+include ./sarnai-ovol
+```
+You can change `set $accent $sarnai` to another color of your choice.
 
+### Terminals
 <p align="center">
-  <img src="./assets/kitty/screenshot.png" style="width: 80%">
+  <img src="./assets/sarnai_term.png" style="width: 80%">
 </p>
-<h4 align="center">Kitty Sarnai Khavar</h4>
+<h5 align="center">Sarnai Khavar</h4>
+
+#### Ghostty
+```bash
+mkdir -p "$HOME"/.config/ghostty/themes/
+cp -r ./.config/ghostty/* "$HOME"/.config/ghostty/themes/
+```
+Then, update your `config`:
+```
+# Dark
+theme = sarnai-khavar
+# Light
+theme = sarnai-ovol
+```
 
 #### Alacritty
 ```bash
-mkdir -p ~/.config/alacritty/themes/
-cp -r terminals/alacritty/* ~/.config/alacritty/themes/
+mkdir -p "$HOME"/.config/alacritty/themes/
+cp -r ./.config/alacritty/* "$HOME"/.config/alacritty/themes/
 ```
 Then, update your `alacritty.toml`:
 ```toml
 [general]
+# Dark
 import = ["~/.config/alacritty/themes/sarnai-khavar.toml"]
+# Light
+import = ["~/.config/alacritty/themes/sarnai-ovol.toml"]
 ```
 
-#### Ghostty
+#### Kitty
 ```bash
-mkdir -p ~/.config/ghostty/themes/
-cp -r terminals/ghostty/* ~/.config/ghostty/themes/
+mkdir -p "$HOME"/.config/kitty/themes/
+cp -r ./.config/kitty/* "$HOME"/.config/kitty/themes/
 ```
-Then, update your `config`:
-```
-theme = sarnai-khavar
+Then, update your `kitty.conf`:
+```conf
+# Dark
+include ./themes/sarnai-khavar.conf
+# Light
+include ./themes/sarnai-ovol.conf
 ```
 
-### Zen Browser
-Copy `zen/chrome` to your [zen's profiles `chrome` folder](https://www.userchrome.org/how-create-userchrome-css.html). And add the [sarnai firefox theme](https://addons.mozilla.org/en-US/firefox/addon/sarnai)
-<p align="center">
-  <img src="./assets/zen/screenshot.png" style="width: 80%">
-</p>
-<h4 align="center">Zen Browser</h4>
+### Tmux
+```bash
+cp -r ./.config/tmux/sarnai.conf "$HOME"/.config/tmux/
+```
+Then, update your `tmux.conf` :
+```conf
+# Dark
+source-file ~/.config/tmux/sarnai-khavar.conf
+# Light
+source-file ~/.config/tmux/sarnai-ovol.conf
+```
 
-### userStyles
+### Waybar
+You can copy/paste the [predefined colors](./.config/waybar/style.css) into your
+`~/.config/waybar/style.css`
+
+### Firefox
+You can use the [sarnai theme](https://addons.mozilla.org/en-US/firefox/addon/sarnai/)
+
+#### stylus extension
 To use with browser extension **Stylus** ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) or [Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)).
-Download the [import.json](./userStyle/import.json) and import inside **Stylus**.
+Download the [import.json](./stylus/import.json) and import inside **Stylus**.
 
-## 🫱🏼‍🫲🏽 Contributing  
-PRs are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.  
+## Contributing
+Pull requests are welcome! See [CONTRIBUTING](CONTRIBUTING.md) for guidelines.
 
