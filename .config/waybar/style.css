@@ -1,0 +1,31 @@
+/* SARNAI KHAVAR COLORS */
+@define-color base       rgb (23,  38,  32);
+@define-color surface    rgb (33,  54,  45);
+@define-color overlay    rgb (45,  73,  61);
+@define-color muted      rgb (78,  126, 107);
+@define-color subtle     rgb (144, 187, 170);
+@define-color text       rgb (223, 236, 231);
+@define-color sarnai     rgb (240, 195, 203);
+@define-color anis       rgb (255, 107, 107);
+@define-color chatsalgan rgb (229, 149, 26);
+@define-color els        rgb (204, 162, 77);
+@define-color uvs        rgb (128, 185, 70);
+@define-color nuur       rgb (43,  135, 158);
+@define-color mus        rgb (157, 234, 234);
+@define-color yargui     rgb (213, 179, 229);
+
+/* SARNAI OVOL COLORS */
+@define-color base-ovol       rgb (220, 234, 228);
+@define-color surface-ovol    rgb (182, 210, 199);
+@define-color overlay-ovol    rgb (144, 187, 170);
+@define-color muted-ovol      rgb (129, 177, 158);
+@define-color subtle-ovol     rgb (68,  111, 94);
+@define-color text-ovol       rgb (19,  32,  27);
+@define-color sarnai-ovol     rgb (185, 61,  77);
+@define-color anis-ovol       rgb (204, 41,  41);
+@define-color chatsalgan-ovol rgb (218, 115, 12);
+@define-color els-ovol        rgb (223, 155, 35);
+@define-color uvs-ovol        rgb (76,  137, 15);
+@define-color nuur-ovol       rgb (10,  114, 140);
+@define-color mus-ovol        rgb (18,  173, 173);
+@define-color yargui-ovol     rgb (163, 83,  198);
