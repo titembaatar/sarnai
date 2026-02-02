@@ -325,9 +325,8 @@ You can copy/paste the [predefined colors](./.config/waybar/style.css) into your
 ### Firefox
 You can use the [sarnai theme](https://addons.mozilla.org/en-US/firefox/addon/sarnai/)
 
-#### stylus extension
-To use with browser extension **Stylus** ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) or [Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)).
-Download the [import.json](./stylus/import.json) and import inside **Stylus**.
+### stylus extension
+goto : [titembaatar/sarnai.userstyles](codeberg.org/titembaatar/sarnai.userstyles)
 
 ## Contributing
 Pull requests are welcome! See [CONTRIBUTING](CONTRIBUTING.md) for guidelines.
